@@ -1,128 +1,154 @@
-# Manish Jha - Portfolio Website
+# Manish Jha - Game Developer Portfolio
 
-A modern, responsive portfolio website showcasing Manish Jha's work as a Game Developer. Built with HTML, CSS, and JavaScript, this portfolio features a clean design with smooth animations and interactive elements.
+A modern, responsive portfolio website built with **Next.js 15** showcasing Manish Jha's work as a Game Developer with 6+ years of experience in Unity development, game design, and multiplayer systems.
 
 ## 🎮 About
 
-This portfolio website represents Manish Jha, a Game Developer with over 6 years of experience in Unity development, game design, and UI/UX design. The website showcases his professional journey, skills, projects, and provides contact information.
+This portfolio represents Manish Jha, a **Senior Unity Developer** with expertise in:
+- **Unity Development** (6+ years)
+- **Game Design & Programming**
+- **Multiplayer Systems** (Photon Fusion 2, Unity Netcode)
+- **Mobile Game Development**
+- **VR/AR Development**
 
 ## ✨ Features
 
-- **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices
-- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
+- **Modern React/Next.js**: Built with Next.js 15 and TypeScript
+- **Responsive Design**: Fully responsive layout for all devices
 - **Interactive Navigation**: Sidebar navigation with active link highlighting
-- **Portfolio Showcase**: Interactive project gallery with filtering capabilities
-- **Skills Display**: Animated skills section with progress bars
-- **Contact Form**: Functional contact form with input animations
-- **Social Media Integration**: Links to social media profiles
-- **Smooth Scrolling**: Enhanced user experience with smooth scroll behavior
-- **Mobile-First**: Optimized for mobile devices with touch-friendly interactions
+- **Portfolio Showcase**: Game development projects with filtering
+- **Skills Display**: Interactive skills section with progress bars
+- **Contact Form**: Functional contact form with validation
+- **Social Media Integration**: Professional social links
+- **Smooth Animations**: Enhanced UX with smooth transitions
+- **Static Export**: Optimized for GitHub Pages deployment
 
 ## 🛠️ Technologies Used
 
-- **HTML5**: Semantic markup structure
-- **CSS3**: 
-  - Custom properties (CSS variables)
-  - Flexbox and Grid layouts
-  - Responsive design with media queries
-  - Smooth animations and transitions
-- **JavaScript (ES6+)**:
-  - DOM manipulation
-  - Event handling
-  - Interactive components
-  - Portfolio filtering
-  - Form validation
-- **External Libraries**:
-  - [Unicons](https://unicons.iconscout.com/) - Icon library
-  - [Boxicons](https://boxicons.com/) - Additional icons
-  - [Swiper.js](https://swiperjs.com/) - Touch slider
-  - [MixItUp](https://www.kunkalabs.com/mixitup/) - Portfolio filtering
+### **Frontend Framework**
+- **Next.js 15**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **React 18**: Modern React features and hooks
+
+### **Styling & UI**
+- **CSS3**: Custom properties, Flexbox, Grid layouts
+- **Responsive Design**: Mobile-first approach
+- **Animations**: Smooth transitions and hover effects
+
+### **External Libraries**
+- **Unicons**: Professional icon library
+- **Boxicons**: Additional icon set
+- **Swiper.js**: Touch slider functionality
+
+### **Build & Deployment**
+- **Static Export**: Optimized for static hosting
+- **GitHub Pages**: Automated deployment
+- **TypeScript**: Type safety throughout
 
 ## 📁 Project Structure
 
 ```
 manish-portfolio/
-├── assets/
-│   ├── about-img.png
-│   ├── home-bg.jpg
-│   └── home-img.png
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-├── index.html
-└── README.md
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout
+│   │   └── page.tsx            # Home page
+│   ├── components/
+│   │   ├── About.tsx           # About section
+│   │   ├── Contact.tsx         # Contact form
+│   │   ├── Footer.tsx          # Footer component
+│   │   ├── Home.tsx            # Hero section
+│   │   ├── Sidebar.tsx         # Navigation
+│   │   ├── Skills.tsx          # Skills display
+│   │   └── Work.tsx            # Portfolio projects
+│   ├── data/
+│   │   └── personalInfo.json   # Portfolio data
+│   └── styles/
+│       └── globals.css         # Global styles
+├── public/                     # Static assets
+├── .github/workflows/          # GitHub Actions
+├── next.config.js              # Next.js config
+├── package.json                # Dependencies
+└── README.md                   # This file
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional dependencies required - all libraries are loaded via CDN
+- **Node.js 18+** (recommended)
+- **npm** or **yarn** package manager
+- Modern web browser
 
 ### Installation
 
-1. Clone or download the repository
-2. Open `index.html` in your web browser
-3. The website should load immediately with all features working
-
-### Local Development
-
-If you want to modify the website:
-
-1. Open the project in your preferred code editor
-2. Make changes to the HTML, CSS, or JavaScript files
-3. Refresh your browser to see the changes
-4. For live development, you can use a local server:
+1. **Clone the repository**
    ```bash
-   # Using Python 3
-   python -m http.server 8000
-   
-   # Using Node.js (if you have http-server installed)
-   npx http-server
+   git clone https://github.com/psychicDree/manish-portfolio.git
+   cd manish-portfolio
    ```
 
-## 📱 Sections
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### Home Section
-- Personal introduction and professional title
+3. **Run development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
+
+### Build for Production
+
+```bash
+# Build the application
+npm run build
+
+# Export static files
+npm run export
+```
+
+## 📱 Portfolio Sections
+
+### **Home Section**
+- Professional introduction
 - Social media links
-- Contact information (Messenger, WhatsApp, Email)
-- Call-to-action button
-
-### About Section
-- Professional background and experience
-- Key statistics (6+ years experience, 10+ projects)
-- Personal description and expertise areas
-
-### Qualifications Section
-- Education timeline
-- Work experience timeline
-- Interactive timeline with hover effects
-
-### Skills Section
-- Interactive tabs for different skill categories
-- Progress bars for skill proficiency
-- Animated skill displays
-
-### Work Section
-- Portfolio project showcase
-- Filterable project categories
-- Project popup modals with detailed information
-
-### Contact Section
-- Contact form with animated inputs
 - Contact information cards
+- Resume preview
+
+### **About Section**
+- Professional background
+- Experience timeline
+- Education history
+- Key achievements
+
+### **Skills Section**
+- **Unity Development**: Gameplay programming, UI systems, C#
+- **Level Design**: Cinemachine, ProBuilder, Lighting
+- **Multiplayer Development**: Photon Fusion 2, Unity Netcode
+- **Native Development**: iOS/Android, Swift, Kotlin
+
+### **Work Section**
+- **Game Development Projects**: Unity-based games
+- **Mobile Games**: Cross-platform development
+- **VR Projects**: Immersive experiences
+- **Educational Games**: Learning platforms
+
+### **Contact Section**
+- Contact form with validation
+- Direct contact methods
 - Social media integration
 
 ## 🎨 Design Features
 
-- **Color Scheme**: Dark theme with pink accent color
-- **Typography**: Poppins font family for body text, Turret Road for signature elements
-- **Animations**: Smooth transitions and hover effects
-- **Layout**: CSS Grid and Flexbox for responsive layouts
-- **Icons**: Unicons and Boxicons for consistent iconography
+- **Color Scheme**: Dark theme with pink accent
+- **Typography**: Modern, readable fonts
+- **Animations**: Smooth transitions and effects
+- **Layout**: CSS Grid and Flexbox
+- **Icons**: Professional iconography
 
 ## 📱 Responsive Breakpoints
 
@@ -133,20 +159,39 @@ If you want to modify the website:
 
 ## 🔧 Customization
 
-### Colors
-The color scheme can be modified by changing CSS variables in `css/style.css`:
-```css
-:root {
-  --skin-color: hsl(342, 92%, 46%); /* Main accent color */
-  --body-color: hsl(var(--hue-color), 19%, 5%); /* Background */
-  --title-color: hsl(var(--hue-color), 8%, 95%); /* Text color */
-}
-```
+### **Personal Information**
+Update `src/data/personalInfo.json` to modify:
+- Personal details
+- Skills and experience
+- Project information
+- Contact details
 
-### Content
-- Update personal information in `index.html`
-- Replace images in the `assets/` folder
-- Modify skills and projects in the respective sections
+### **Styling**
+- Modify `src/styles/globals.css` for theme changes
+- Update component styles in individual files
+- Customize animations and transitions
+
+### **Content**
+- Replace images in `public/` directory
+- Update project data in components
+- Modify skills and experience sections
+
+## 🚀 Deployment
+
+### **GitHub Pages**
+This project is configured for GitHub Pages deployment:
+
+1. **Automatic Deployment**: Push to main branch triggers build
+2. **Static Export**: Optimized for static hosting
+3. **Custom Domain**: Supports custom domain configuration
+
+### **Manual Deployment**
+```bash
+# Build and export
+npm run build
+
+# Deploy to any static hosting service
+```
 
 ## 📄 License
 
@@ -159,34 +204,34 @@ Feel free to submit issues and enhancement requests!
 ## 📞 Contact
 
 - **Name**: Manish Jha
-- **Profession**: Game Developer
+- **Profession**: Senior Unity Developer
 - **Experience**: 6+ years
 - **Location**: India
-- **Email**: user@gmail.com
-- **WhatsApp**: 999-888-777
+- **Email**: devmanjha@gmail.com
+- **Phone**: 959-920-5371
+- **LinkedIn**: [gamedev-manishjha](https://www.linkedin.com/in/gamedev-manishjha)
+- **GitHub**: [psychicDree](https://github.com/psychicDree)
 
-## 🌟 Features in Detail
+## 🌟 Technical Highlights
 
-### Interactive Elements
-- **Skill Tabs**: Click to switch between different skill categories
-- **Portfolio Filtering**: Filter projects by category
-- **Project Modals**: Click on projects to view detailed information
-- **Contact Form**: Animated input fields with focus effects
-- **Navigation**: Smooth scrolling to sections with active link highlighting
+### **Performance Optimizations**
+- Static site generation
+- Optimized images and assets
+- Minimal JavaScript bundle
+- Efficient CSS animations
 
-### Performance Optimizations
-- Optimized images for web
-- Minimal JavaScript for fast loading
-- CSS animations using transform and opacity for smooth performance
-- Responsive images that scale appropriately
+### **Developer Experience**
+- TypeScript for type safety
+- Modern React patterns
+- Component-based architecture
+- Hot reload development
 
-### Accessibility
+### **Accessibility**
 - Semantic HTML structure
 - Proper heading hierarchy
-- Alt text for images
 - Keyboard navigation support
-- High contrast color scheme
+- High contrast design
 
 ---
 
-**Built with ❤️ by Manish Jha**
+**Built with ❤️ by Manish Jha using Next.js**
