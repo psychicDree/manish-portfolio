@@ -1,3 +1,7 @@
+'use client'
+
+import personalInfo from '@/data/personalInfo.json'
+
 export default function About() {
   return (
     <>
@@ -8,15 +12,14 @@ export default function About() {
           <img src="/about-img.png" alt="" className="about-img" />
 
           <div className="about-data">
-            <h3 className="about-heading">Hi, I'm Manish Jha, based in India</h3>
-            <p className="about-description">I'm a game developer, with extensive knowledge and years of experience,
-              working with quality work in game technologies, UI and UX design</p>
+            <h3 className="about-heading">Hi, I'm {personalInfo.personal.name}, based in {personalInfo.personal.location}</h3>
+            <p className="about-description">{personalInfo.personal.description}</p>
 
             <div className="about-info">
               <div className="about-box">
                 <i className="uil uil-award about-icon"></i>
                 <h3 className="about-title">Experience</h3>
-                <span className="about-subtitle">6 + Years</span>
+                <span className="about-subtitle">{personalInfo.skills.experience}</span>
               </div>
 
               <div className="about-box">
@@ -51,19 +54,19 @@ export default function About() {
             <div className="timeline">
               <div className="timeline-item">
                 <div className="circle-dot"></div>
-                <h3 className="timeline-title">SOS Hermann Gmeiner School (Faridabad, Haryana)</h3>
-                <p className="timeline-text">High School</p>
+                <h3 className="timeline-title">{personalInfo.about.education.institution}</h3>
+                <p className="timeline-text">{personalInfo.about.education.degree}</p>
                 <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>2013 - 2016
+                  <i className="uil uil-calendar-alt"></i>{personalInfo.about.education.graduationYear}
                 </span>
               </div>
 
               <div className="timeline-item">
                 <div className="circle-dot"></div>
-                <h3 className="timeline-title">Kalinga University (Chhattisgarh, India)</h3>
-                <p className="timeline-text">Bachalor in Computer Application</p>
+                <h3 className="timeline-title">SOS Hermann Gmeiner School (Faridabad, Haryana)</h3>
+                <p className="timeline-text">High School</p>
                 <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>2016 - 2019
+                  <i className="uil uil-calendar-alt"></i>2013 - 2016
                 </span>
               </div>
 
