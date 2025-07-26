@@ -1,0 +1,301 @@
+{
+  "personal": {
+    "name": "Manish Jha",
+    "title": "Game Developer",
+    "description": "I have high level experience in Game design, development knowledge and producing quality work",
+    "location": "India",
+    "email": "devmanjha@gmail.com",
+    "phone": "959-920-5371",
+    "website": "https://psychicdree.github.io/manish-portfolio/"
+  },
+  "social": {
+    "facebook": {
+      "url": "https://www.facebook.com",
+      "username": "user.fb123",
+      "icon": "uil uil-facebook-f"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/happi_hippie________/",
+      "username": "happi_hippie________",
+      "icon": "uil uil-instagram"
+    },
+    "twitter": {
+      "url": "https://x.com/gamedevmanish",
+      "username": "gamedevmanish",
+      "icon": "uil uil-twitter"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/gamedev-manishjha",
+      "username": "gamedev-manishjha",
+      "icon": "uil uil-linkedin-alt"
+    },
+    "github": {
+      "url": "https://github.com/psychicDree",
+      "username": "psychicDree",
+      "icon": "uil uil-github-alt"
+    }
+  },
+  "messaging": {
+    "call": {
+      "platform": "Call",
+      "phone": "959-920-5371",
+      "icon": "uil uil-phone"
+    },
+    "messenger": {
+      "platform": "Facebook Messenger",
+      "username": "user.fb123",
+      "icon": "uil uil-facebook-messenger"
+    },
+    "whatsapp": {
+      "platform": "WhatsApp",
+      "phone": "959-920-5371",
+      "icon": "uil uil-whatsapp"
+    },
+    "email": {
+      "platform": "Email",
+      "address": "devmanjha@gmail.com",
+      "icon": "uil uil-envelope-edit"
+    }
+  },
+  "resume": {
+    "pdf": "/resumes/resume.pdf",
+    "preview": "/resume-preview.jpg",
+    "downloadText": "Download Resume"
+  },
+  "skills": {
+    "primary": [
+      "Unity Development",
+      "Game Design",
+      "C# Programming",
+      "Gameplay Programming",
+      "Multiplayer Development"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "Photon",
+      "Firebase",
+      "MongoDB",
+      "UI/UX Design"
+    ],
+    "experience": "6+ years",
+    "categories": {
+      "unityDeveloper": {
+        "id": "unityDeveloper",
+        "title": "Unity Developer",
+        "subtitle": "More than 6 years",
+        "icon": "uil uil-brackets-curly",
+        "skills": [
+          {
+            "name": "Gameplay Programming",
+            "percentage": 90
+          },
+          {
+            "name": "Unity Rendering & UI Systems",
+            "percentage": 95
+          },
+          {
+            "name": "UI Animation & Effects",
+            "percentage": 90
+          },
+          {
+            "name": "C# Programming",
+            "percentage": 90
+          },
+          {
+            "name": "ScriptableObject Architecture",
+            "percentage": 80
+          }
+        ]
+      },
+      "levelDesigner": {
+        "id": "levelDesigner",
+        "title": "Level Designer",
+        "subtitle": "More than 1 year",
+        "icon": "uil uil-swatchbook",
+        "skills": [
+          {
+            "name": "Cinemachine",
+            "percentage": 70
+          },
+          {
+            "name": "ProBuilder",
+            "percentage": 65
+          },
+          {
+            "name": "NavMesh / AI Setup",
+            "percentage": 60
+          },
+          {
+            "name": "Unity Lighting",
+            "percentage": 95
+          },
+          {
+            "name": "Post-Processing",
+            "percentage": 90
+          },
+          {
+            "name": "Blender",
+            "percentage": 60
+          },
+          {
+            "name": "3ds Max",
+            "percentage": 50
+          },
+          {
+            "name": "Maya",
+            "percentage": 50
+          }
+        ]
+      },
+      "multiplayerDevelopment": {
+        "id": "multiplayerDevelopment",
+        "title": "Multiplayer Development",
+        "subtitle": "More than 5 years",
+        "icon": "uil uil-server-network",
+        "skills": [
+          {
+            "name": "Photon Fusion 2",
+            "percentage": 85
+          },
+          {
+            "name": "Unity Netcode for GameObjects",
+            "percentage": 75
+          },
+          {
+            "name": "Unity Lobby & Relay",
+            "percentage": 70
+          },
+          {
+            "name": "Socket.IO",
+            "percentage": 80
+          },
+          {
+            "name": "Firebase",
+            "percentage": 75
+          },
+          {
+            "name": "MongoDB",
+            "percentage": 70
+          }
+        ]
+      },
+      "nativeDevelopment": {
+        "id": "nativeDevelopment",
+        "title": "Native Development",
+        "subtitle": "More than 2 years",
+        "icon": "uil uil-mobile-android",
+        "skills": [
+          {
+            "name": "Xcode",
+            "percentage": 50
+          },
+          {
+            "name": "Swift",
+            "percentage": 75
+          },
+          {
+            "name": "Android Studio",
+            "percentage": 75
+          },
+          {
+            "name": "Kotlin",
+            "percentage": 60
+          },
+          {
+            "name": "React Native",
+            "percentage": 60
+          }
+        ]
+      }
+    }
+  },
+  "references": {
+    "professional": [
+      {
+        "name": "John Smith",
+        "position": "Senior Game Developer",
+        "company": "GameStudio Inc.",
+        "email": "john.smith@gamestudio.com",
+        "phone": "+1-555-0123",
+        "relationship": "Former Team Lead",
+        "testimonial": "Manish is an exceptional game developer with deep technical knowledge and creative problem-solving skills. His expertise in Unity and multiplayer development has been invaluable to our projects.",
+        "linkedin": "https://linkedin.com/in/johnsmith"
+      },
+      {
+        "name": "Sarah Johnson",
+        "position": "Game Design Director",
+        "company": "Creative Games Ltd.",
+        "email": "sarah.johnson@creativegames.com",
+        "phone": "+1-555-0456",
+        "relationship": "Project Manager",
+        "testimonial": "Working with Manish was a pleasure. His attention to detail and ability to translate design concepts into functional gameplay systems is outstanding.",
+        "linkedin": "https://linkedin.com/in/sarahjohnson"
+      },
+      {
+        "name": "Michael Chen",
+        "position": "Technical Lead",
+        "company": "TechGames Studio",
+        "email": "michael.chen@techgames.com",
+        "phone": "+1-555-0789",
+        "relationship": "Technical Supervisor",
+        "testimonial": "Manish's technical skills are top-notch. He consistently delivered high-quality code and innovative solutions for complex game mechanics.",
+        "linkedin": "https://linkedin.com/in/michaelchen"
+      }
+    ],
+    "academic": [
+      {
+        "name": "Dr. Emily Rodriguez",
+        "position": "Professor of Computer Science",
+        "institution": "University of Technology",
+        "email": "emily.rodriguez@university.edu",
+        "phone": "+1-555-0321",
+        "relationship": "Academic Advisor",
+        "testimonial": "Manish demonstrated exceptional analytical skills and creativity in his academic projects. His passion for game development is evident in his work.",
+        "department": "Computer Science Department"
+      }
+    ],
+    "client": [
+      {
+        "name": "David Wilson",
+        "position": "CEO",
+        "company": "IndieGame Studio",
+        "email": "david.wilson@indiegame.com",
+        "phone": "+1-555-0654",
+        "relationship": "Client",
+        "testimonial": "Manish delivered our game project on time and exceeded our expectations. His technical expertise and professional approach made the entire process smooth.",
+        "project": "Mobile RPG Game"
+      }
+    ]
+  },
+  "about": {
+    "summary": "Experienced game developer with expertise in Unity development, gameplay programming, and multiplayer systems. Passionate about creating engaging gaming experiences and innovative solutions.",
+    "interests": [
+      "Game Development",
+      "Unity Programming",
+      "Multiplayer Systems",
+      "UI/UX Design",
+      "Mobile Gaming"
+    ],
+    "education": {
+      "degree": "Bachelor of Technology in Computer Science",
+      "institution": "University of Technology",
+      "graduationYear": "2018",
+      "gpa": "3.8/4.0"
+    },
+    "certifications": [
+      {
+        "name": "Unity Certified Developer",
+        "issuer": "Unity Technologies",
+        "year": "2022",
+        "validity": "2025"
+      },
+      {
+        "name": "C# Programming Certification",
+        "issuer": "Microsoft",
+        "year": "2021",
+        "validity": "2024"
+      }
+    ]
+  }
+} 
