@@ -12,7 +12,7 @@ export default function Home() {
     <section className="home" id="home">
       <div className="home-container container grid">
         <div className="home-social">
-          <span className="home-social-follow">Follow Me</span>
+          <span className="home-social-follow">Follow Me!</span>
           <div className="home-social-links">
             <a href={instagram.url} target="_blank" className="home-social-link">
               <i className={instagram.icon}></i>
