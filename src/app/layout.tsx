@@ -43,6 +43,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        {/* Force fresh deployment - Game Developer Portfolio */}
       </head>
       <body className={inter.className}>
         {children}
