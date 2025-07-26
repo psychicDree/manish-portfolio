@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         </div>
 
-        <img src="/home-img.png" alt="" className="home-img" onError={(e) => {
+        <img src="/manish-portfolio/home-img.png" alt="" className="home-img" onError={(e) => {
           e.currentTarget.style.display = 'none';
         }} />
 
@@ -73,7 +73,7 @@ export default function Home() {
           <h3 className="resume-preview-title">Resume</h3>
           <div className="resume-preview-container">
             <a 
-              href={personalInfo.resume.pdf} 
+              href="/manish-portfolio/resumes/resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="resume-preview-link"
@@ -81,7 +81,7 @@ export default function Home() {
             >
               <div className="resume-preview-image-container">
                 <img 
-                  src={personalInfo.resume.preview} 
+                  src="/manish-portfolio/resume_page-0001.jpg" 
                   alt="Resume preview - Click to view full PDF" 
                   className="resume-preview-image"
                   loading="lazy"
