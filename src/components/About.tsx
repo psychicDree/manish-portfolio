@@ -1,6 +1,7 @@
 'use client'
 
 import personalInfo from '@/data/personalInfo.json'
+import { getAssetPath } from '@/utils/paths'
 
 export default function About() {
   return (
@@ -9,7 +10,7 @@ export default function About() {
         <h2 className="section-title" data-heading="My Intro">About me</h2>
 
         <div className="about-container container grid">
-          <img src="/manish-portfolio/about-img.png" alt="" className="about-img" />
+          <img src={getAssetPath("/about-img.png")} alt="" className="about-img" />
 
           <div className="about-data">
             <h3 className="about-heading">Hi, I'm {personalInfo.personal.name}, based in {personalInfo.personal.location}</h3>

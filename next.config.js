@@ -5,8 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: '/manish-portfolio',
-  assetPrefix: '/manish-portfolio/',
   webpack: (config) => {
     config.resolve.fallback = {
       ...config.resolve.fallback,

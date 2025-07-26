@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import personalInfo from '@/data/personalInfo.json'
+import { getAssetPath } from '@/utils/paths'
 
 // Access your data
 const { name, title, email } = personalInfo.personal
@@ -28,7 +29,7 @@ export default function Home() {
           </div>
         </div>
 
-        <img src="/manish-portfolio/home-img.png" alt="" className="home-img" onError={(e) => {
+        <img src={getAssetPath("/home-img.png")} alt="" className="home-img" onError={(e) => {
           e.currentTarget.style.display = 'none';
         }} />
 
@@ -73,7 +74,7 @@ export default function Home() {
           <h3 className="resume-preview-title">Resume</h3>
           <div className="resume-preview-container">
             <a 
-              href="/manish-portfolio/resumes/resume.pdf" 
+              href={getAssetPath("/resumes/resume.pdf")} 
               target="_blank" 
               rel="noopener noreferrer"
               className="resume-preview-link"
@@ -81,7 +82,7 @@ export default function Home() {
             >
               <div className="resume-preview-image-container">
                 <img 
-                  src="/manish-portfolio/resume_page-0001.jpg" 
+                  src={getAssetPath("/resume_page-0001.jpg")} 
                   alt="Resume preview - Click to view full PDF" 
                   className="resume-preview-image"
                   loading="lazy"
