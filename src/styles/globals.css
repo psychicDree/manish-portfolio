@@ -164,6 +164,7 @@ input {
   height: 100vh;
   background-color: var(--body-color);
   border-right: 1px solid var(--box-color);
+  transition: transform 0.3s ease;
 }
 .nav-logo {
   position: absolute;
@@ -447,6 +448,17 @@ input {
   line-height: 1.4;
 }
 
+@media screen and (max-width: 1024px) {
+  .resume-preview-section {
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+}
+
 /* Main - About */
 
 .about-container {
@@ -723,6 +735,7 @@ input {
 .portfolio-popup-inner {
   background-color: var(--box-color);
   width: 900px;
+  max-width: 100%;
   border-radius: 0.5rem;
   padding: 2.5rem;
   position: relative;
@@ -833,6 +846,7 @@ input {
 }
 .services-modal-content {
   width: 500px;
+  max-width: 100%;
   position: relative;
   background-color: var(--box-color);
   padding: 4.5rem 2.5rem 2.5rem;
