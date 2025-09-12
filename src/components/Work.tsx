@@ -6,7 +6,6 @@ interface PortfolioItem {
   id: number
   title: string
   category: string
-  image: string
   details: {
     title: string
     description: string
@@ -20,86 +19,340 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: 'Multiplayer Racing Game',
+    title: 'app-backend',
     category: 'game',
-    image: 'https://i.postimg.cc/43Th5VXJ/work-1.png',
     details: {
-      title: 'Real-time Multiplayer Racing Game with Unity',
-      description: 'A high-performance racing game featuring real-time multiplayer functionality using Photon Fusion 2, advanced vehicle physics, and dynamic weather systems.',
-      created: '22 Apr 2025',
-      technologies: 'Unity, C#, Photon Fusion 2, Firebase',
-      role: 'Lead Unity Developer',
-      view: 'https://github.com/psychicDree/racing-game'
+      title: 'app-backend',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/app-backend'
     }
   },
   {
     id: 2,
-    title: 'Mobile RPG Adventure',
-    category: 'mobile',
-    image: 'https://i.postimg.cc/sXLjnC5p/work-2.png',
+    title: 'app-gdk-diagrams',
+    category: 'game',
     details: {
-      title: 'Cross-platform Mobile RPG with Advanced AI',
-      description: 'A feature-rich RPG game with procedurally generated levels, advanced AI systems, and cross-platform multiplayer support for iOS and Android.',
-      created: '15 Apr 2025',
-      technologies: 'Unity, C#, Swift, Kotlin, Firebase',
-      role: 'Game Developer & Mobile Lead',
-      view: 'https://github.com/psychicDree/mobile-rpg'
+      title: 'app-gdk-diagrams',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/app-gdk-diagrams'
     }
   },
   {
     id: 3,
-    title: 'VR Escape Room',
-    category: 'vr',
-    image: 'https://i.postimg.cc/QNB1jXYZ/work-3.png',
+    title: 'app-server',
+    category: 'game',
     details: {
-      title: 'Immersive VR Puzzle Game with Haptic Feedback',
-      description: 'A virtual reality escape room experience featuring complex puzzle mechanics, realistic physics interactions, and immersive audio-visual design.',
-      created: '10 Apr 2025',
-      technologies: 'Unity, C#, Oculus SDK, SteamVR',
-      role: 'VR Developer',
-      view: 'https://github.com/psychicDree/vr-escape'
+      title: 'app-server',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/app-server'
     }
   },
   {
     id: 4,
-    title: 'Battle Royale Game',
+    title: 'AssignmentInventory',
     category: 'game',
-    image: 'https://i.postimg.cc/s2DGqyG8/work-4.png',
     details: {
-      title: 'Large-scale Battle Royale with 100+ Players',
-      description: 'A massive multiplayer battle royale game supporting 100+ concurrent players with advanced networking, dynamic environments, and sophisticated matchmaking.',
-      created: '4 Apr 2025',
-      technologies: 'Unity, C#, Photon Fusion 2, MongoDB',
-      role: 'Senior Unity Developer',
-      view: 'https://github.com/psychicDree/battle-royale'
+      title: 'AssignmentInventory',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/AssignmentInventory'
     }
   },
   {
     id: 5,
-    title: 'Educational Game Platform',
-    category: 'mobile',
-    image: 'https://i.postimg.cc/TYVyPhrF/work-5.png',
+    title: 'AsyncLoadingScreen',
+    category: 'game',
     details: {
-      title: 'Interactive Learning Platform for Children',
-      description: 'An educational game platform featuring adaptive learning algorithms, progress tracking, and engaging mini-games designed for children aged 5-12.',
-      created: '28 Mar 2025',
-      technologies: 'Unity, C#, Firebase, Machine Learning',
-      role: 'Game Developer & Educational Designer',
-      view: 'https://github.com/psychicDree/edu-platform'
+      title: 'AsyncLoadingScreen',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/AsyncLoadingScreen'
     }
   },
   {
     id: 6,
-    title: 'Stealth Action Game',
+    title: 'BikeController',
     category: 'game',
-    image: 'https://i.postimg.cc/wMdqKcbv/work-6.png',
     details: {
-      title: 'Stealth-based Action Adventure Game',
-      description: 'A sophisticated stealth game featuring advanced AI behavior trees, dynamic lighting systems, and procedural level generation for endless replayability.',
-      created: '20 Mar 2025',
-      technologies: 'Unity, C#, NavMesh, Post-Processing',
-      role: 'Game Developer & AI Specialist',
-      view: 'https://github.com/psychicDree/stealth-game'
+      title: 'BikeController',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/BikeController'
+    }
+  },
+  {
+    id: 7,
+    title: 'CortexAI',
+    category: 'game',
+    details: {
+      title: 'CortexAI',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/CortexAI'
+    }
+  },
+  {
+    id: 8,
+    title: 'Cricket-Game',
+    category: 'game',
+    details: {
+      title: 'Cricket-Game',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/Cricket-Game'
+    }
+  },
+  {
+    id: 9,
+    title: 'demo-rpg',
+    category: 'game',
+    details: {
+      title: 'demo-rpg',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/demo-rpg'
+    }
+  },
+  {
+    id: 10,
+    title: 'game-template',
+    category: 'game',
+    details: {
+      title: 'game-template',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/game-template'
+    }
+  },
+  {
+    id: 11,
+    title: 'GameClient',
+    category: 'game',
+    details: {
+      title: 'GameClient',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/GameClient'
+    }
+  },
+  {
+    id: 12,
+    title: 'gamedev-maths-c-',
+    category: 'game',
+    details: {
+      title: 'gamedev-maths-c-',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/gamedev-maths-c-'
+    }
+  },
+  {
+    id: 13,
+    title: 'GameServer',
+    category: 'game',
+    details: {
+      title: 'GameServer',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/GameServer'
+    }
+  },
+  {
+    id: 14,
+    title: 'learn-coding-ios-app',
+    category: 'game',
+    details: {
+      title: 'learn-coding-ios-app',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/learn-coding-ios-app'
+    }
+  },
+  {
+    id: 15,
+    title: 'lego-engine',
+    category: 'game',
+    details: {
+      title: 'lego-engine',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/lego-engine'
+    }
+  },
+  {
+    id: 16,
+    title: 'manish-portfolio',
+    category: 'game',
+    details: {
+      title: 'manish-portfolio',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/manish-portfolio'
+    }
+  },
+  {
+    id: 17,
+    title: 'Multiplyer-Sample-in-Unity-2019-using-Photon',
+    category: 'game',
+    details: {
+      title: 'Multiplyer-Sample-in-Unity-2019-using-Photon',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/Multiplyer-Sample-in-Unity-2019-using-Photon'
+    }
+  },
+  {
+    id: 18,
+    title: 'OpenGL-Tutorials',
+    category: 'game',
+    details: {
+      title: 'OpenGL-Tutorials',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/OpenGL-Tutorials'
+    }
+  },
+  {
+    id: 19,
+    title: 'Procedural-Planet',
+    category: 'game',
+    details: {
+      title: 'Procedural-Planet',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/Procedural-Planet'
+    }
+  },
+  {
+    id: 20,
+    title: 'proxy-list',
+    category: 'game',
+    details: {
+      title: 'proxy-list',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/proxy-list'
+    }
+  },
+  {
+    id: 21,
+    title: 'SquareAndRectangle',
+    category: 'game',
+    details: {
+      title: 'SquareAndRectangle',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/SquareAndRectangle'
+    }
+  },
+  {
+    id: 22,
+    title: 'SWAT-In-City',
+    category: 'game',
+    details: {
+      title: 'SWAT-In-City',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/SWAT-In-City'
+    }
+  },
+  {
+    id: 23,
+    title: 'swift-frontend-rive-ui',
+    category: 'game',
+    details: {
+      title: 'swift-frontend-rive-ui',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/swift-frontend-rive-ui'
+    }
+  },
+  {
+    id: 24,
+    title: 'Unity-Script-Collection',
+    category: 'game',
+    details: {
+      title: 'Unity-Script-Collection',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/Unity-Script-Collection'
+    }
+  },
+  {
+    id: 25,
+    title: 'user-interface-cpp',
+    category: 'game',
+    details: {
+      title: 'user-interface-cpp',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/user-interface-cpp'
+    }
+  },
+  {
+    id: 26,
+    title: 'Zombie-Apocolypse---3D',
+    category: 'game',
+    details: {
+      title: 'Zombie-Apocolypse---3D',
+      description: 'GitHub repository',
+      created: '-',
+      technologies: '-',
+      role: 'Owner',
+      view: 'https://github.com/psychicDree/Zombie-Apocolypse---3D'
     }
   }
 ]
@@ -155,7 +408,6 @@ export default function Work() {
         <div className="work-container container grid">
           {filteredItems.map((item) => (
             <div key={item.id} className={`work-card mix ${item.category}`}>
-              <img src={item.image} alt="" className="work-img" />
               <h3 className="work-title">{item.title}</h3>
               <span 
                 className="work-button"
@@ -186,9 +438,6 @@ export default function Work() {
               <span className="portfolio-popup-close" onClick={closePopup}>
                 <i className="uil uil-times"></i>
               </span>
-              <div className="pp-thumbnail">
-                <img src={selectedItem.image} alt="" className="portfolio-popup-img" />
-              </div>
 
               <div className="portfolio-popup-info">
                 <div className="portfolio-popup-subtitle">
