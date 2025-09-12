@@ -1,6 +1,7 @@
+/// <reference types="react" />
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface PortfolioItem {
   id: number
@@ -360,6 +361,87 @@ const portfolioItems: PortfolioItem[] = [
 export default function Work() {
   const [activeFilter, setActiveFilter] = useState('all')
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null)
+  const [repoDescriptionsById, setRepoDescriptionsById] = useState<Record<number, string>>({})
+  const [isFetchingDescription, setIsFetchingDescription] = useState<boolean>(false)
+
+  const getOwnerRepoFromUrl = (url: string): { owner: string, repo: string } | null => {
+    try {
+      const parsed = new URL(url)
+      const segments = parsed.pathname.split('/').filter(Boolean)
+      if (segments.length >= 2) {
+        return { owner: segments[0], repo: segments[1] }
+      }
+      return null
+    } catch {
+      return null
+    }
+  }
+
+  const extractSummaryFromMarkdown = (markdown: string): string => {
+    const normalized = markdown
+      .replace(/\r\n|\r/g, '\n')
+      .trim()
+
+    // Split by blank line to get paragraphs
+    const paragraphs = normalized.split(/\n\s*\n/)
+
+    // Choose the first meaningful paragraph (not a heading/image/badge)
+    const firstMeaningful = paragraphs.find(p => {
+      const trimmed = p.trim()
+      if (!trimmed) return false
+      if (/^#/m.test(trimmed)) return false
+      if (/^!/m.test(trimmed)) return false
+      if (/\[!\[.*?\]\(.*?\)\]\(.*?\)/.test(trimmed)) return false
+      return true
+    }) || ''
+
+    // Strip markdown links/images and inline code
+    let plain = firstMeaningful
+      .replace(/```[\s\S]*?```/g, '')
+      .replace(/`([^`]+)`/g, '$1')
+      .replace(/!\[[^\]]*\]\([^\)]*\)/g, '')
+      .replace(/\[[^\]]*\]\([^\)]*\)/g, (m) => m.replace(/\[|\]|\([^\)]*\)/g, ''))
+      .replace(/^>\s?/gm, '')
+      .replace(/^#+\s?/gm, '')
+      .replace(/\s+/g, ' ')
+      .trim()
+
+    if (!plain) return ''
+    if (plain.length > 220) plain = plain.slice(0, 217).replace(/\s+$/, '') + '...'
+    return plain
+  }
+
+  const fetchDescriptionForItem = async (item: PortfolioItem): Promise<string> => {
+    const repoInfo = getOwnerRepoFromUrl(item.details.view)
+    if (!repoInfo) return ''
+
+    const { owner, repo } = repoInfo
+
+    // Try fetching raw README from default branch via HEAD pointer
+    try {
+      const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/HEAD/README.md`
+      const res = await fetch(rawUrl)
+      if (res.ok) {
+        const markdown = await res.text()
+        const summary = extractSummaryFromMarkdown(markdown)
+        if (summary) return summary
+      }
+    } catch {}
+
+    // Fallback: GitHub Repo description
+    try {
+      const apiUrl = `https://api.github.com/repos/${owner}/${repo}`
+      const res = await fetch(apiUrl)
+      if (res.ok) {
+        const data = await res.json()
+        if (data && typeof data.description === 'string' && data.description.trim().length > 0) {
+          return data.description.trim()
+        }
+      }
+    } catch {}
+
+    return ''
+  }
 
   const filteredItems = activeFilter === 'all' 
     ? portfolioItems 
@@ -368,6 +450,34 @@ export default function Work() {
   const handleItemClick = (item: PortfolioItem) => {
     setSelectedItem(item)
   }
+
+  useEffect(() => {
+    const load = async () => {
+      if (!selectedItem) return
+      if (repoDescriptionsById[selectedItem.id]) return
+      setIsFetchingDescription(true)
+      const desc = await fetchDescriptionForItem(selectedItem)
+      setRepoDescriptionsById((prev: Record<number, string>) => ({ ...prev, [selectedItem.id]: desc || 'GitHub repository' }))
+      setIsFetchingDescription(false)
+    }
+    load()
+  }, [selectedItem])
+
+  // Prefetch descriptions for all items to show alongside projects
+  useEffect(() => {
+    let isCancelled = false
+    const run = async () => {
+      const next: Record<number, string> = {}
+      for (const item of portfolioItems) {
+        const desc = await fetchDescriptionForItem(item)
+        if (isCancelled) return
+        next[item.id] = desc || 'GitHub repository'
+      }
+      if (!isCancelled) setRepoDescriptionsById(next)
+    }
+    run()
+    return () => { isCancelled = true }
+  }, [])
 
   const closePopup = () => {
     setSelectedItem(null)
@@ -418,7 +528,7 @@ export default function Work() {
 
               <div className="portfolio-item-details">
                 <h3 className="details-title">{item.details.title}</h3>
-                <p className="details-description">{item.details.description}</p>
+                <p className="details-description">{repoDescriptionsById[item.id] || item.details.description}</p>
                 <ul className="details-info">
                   <li>Created - <span>{item.details.created}</span></li>
                   <li>Technologies - <span>{item.details.technologies}</span></li>
@@ -445,7 +555,7 @@ export default function Work() {
                 </div>
                 <div className="portfolio-popup-body">
                   <h3 className="details-title">{selectedItem.details.title}</h3>
-                  <p className="details-description">{selectedItem.details.description}</p>
+                  <p className="details-description">{repoDescriptionsById[selectedItem.id] || selectedItem.details.description}</p>
 
                   <ul className="details-info">
                     <li>Created - <span>{selectedItem.details.created}</span></li>
