@@ -383,6 +383,16 @@ input {
   transition: transform 0.3s ease;
 }
 
+/* Hide mobile block by default, show on small screens */
+.resume-preview-mobile {
+  display: none;
+  text-align: center;
+}
+.resume-mobile-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb075);
+}
+
 .resume-preview-link:hover {
   transform: translateY(-4px);
 }
@@ -456,6 +466,19 @@ input {
     transform: none;
     max-width: 100%;
     margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* On mobile: hide desktop preview, show short title + download button */
+  .resume-preview-desktop {
+    display: none;
+  }
+  .resume-preview-mobile {
+    display: block;
+  }
+  .resume-preview-description {
+    display: none;
   }
 }
 

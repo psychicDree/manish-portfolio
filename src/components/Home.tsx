@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Resume Preview Section */}
+        {/* Resume - Desktop shows preview; Mobile shows short title + download */}
         <div className="resume-preview-section">
           <h3 className="resume-preview-title">Resume</h3>
           <div className="resume-preview-container">
@@ -77,7 +77,7 @@ export default function Home() {
               href={getAssetPath("/resumes/resume.pdf")} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="resume-preview-link"
+              className="resume-preview-link resume-preview-desktop"
               aria-label="View full resume PDF in new tab"
             >
               <div className="resume-preview-image-container">
@@ -92,6 +92,20 @@ export default function Home() {
                 </div>
               </div>
             </a>
+            <div className="resume-preview-mobile">
+              <h4 className="resume-mobile-title">Resume</h4>
+              <a 
+                href={getAssetPath("/resumes/resume.pdf")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button"
+                aria-label="Download resume PDF"
+                download
+              >
+                <i className="uil uil-import button-icon"></i>
+                Download
+              </a>
+            </div>
             <p className="resume-preview-description">
               Click the preview above to open the full resume PDF in a new tab
             </p>
