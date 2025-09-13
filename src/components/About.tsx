@@ -71,14 +71,7 @@ export default function About() {
                 </span>
               </div>
 
-              <div className="timeline-item">
-                <div className="circle-dot"></div>
-                <h3 className="timeline-title">IITB University (Mumbai, India)</h3>
-                <p className="timeline-text">Masters in ML and AI</p>
-                <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>2025 - Present
-                </span>
-              </div>
+              
             </div>
           </div>
 
