@@ -1,3 +1,5 @@
+import personalInfo from '@/data/personalInfo.json'
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -18,8 +20,8 @@ export default function Footer() {
           </ul>
 
           <div className="footer-socials">
-            <a href="https://www.facebook.com" target="_blank" className="footer-social">
-              <i className="uil uil-facebook-f"></i>
+            <a href={personalInfo.social.github.url} target="_blank" className="footer-social">
+              <i className={personalInfo.social.github.icon}></i>
             </a>
 
             <a href="https://www.instagram.com" target="_blank" className="footer-social">
