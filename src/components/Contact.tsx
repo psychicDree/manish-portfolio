@@ -40,7 +40,7 @@ export default function Contact() {
     }
   }, [])
 
-  const handleContactClick = (type: 'email' | 'whatsapp' | 'messenger' | 'phone') => {
+  const handleContactClick = (type: 'email' | 'whatsapp' | 'phone') => {
     let url = ''
     switch (type) {
       case 'email':
@@ -48,9 +48,6 @@ export default function Contact() {
         break
       case 'whatsapp':
         url = `https://wa.me/${personalInfo.messaging.whatsapp.phone.replace(/\D/g, '')}?text=Hi Manish, I saw your portfolio and would like to connect!`
-        break
-      case 'messenger':
-        url = `https://m.me/${personalInfo.messaging.messenger.username}`
         break
       case 'phone':
         url = `tel:${personalInfo.messaging.call.phone}`
@@ -97,12 +94,6 @@ export default function Contact() {
               <i className="uil uil-whatsapp contact-card-icon"></i>
               <h3 className="contact-card-title">WhatsApp</h3>
               <span className="contact-card-data">{personalInfo.messaging.whatsapp.phone}</span>
-              <span className="contact-button">Write me <i className="uil uil-arrow-right contact-button-icon"></i></span>
-            </div>
-            <div className="contact-card" onClick={() => handleContactClick('messenger')}>
-              <i className="uil uil-facebook-messenger contact-card-icon"></i>
-              <h3 className="contact-card-title">Messenger</h3>
-              <span className="contact-card-data">{personalInfo.messaging.messenger.username}</span>
               <span className="contact-button">Write me <i className="uil uil-arrow-right contact-button-icon"></i></span>
             </div>
             <div className="contact-card" onClick={() => handleContactClick('phone')}>

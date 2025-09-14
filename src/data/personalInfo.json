@@ -2,28 +2,13 @@
   "personal": {
     "name": "Manish Jha",
     "title": "Game Developer",
-    "description": "I have high level experience in Game design, development knowledge and producing quality work",
-    "location": "India",
+    "description": "Game Developer with 6 years of experience driving impact projects to successful completion while consistently meeting quality targets. I'm a game enthusiast who loves reading up on the latest trends and implementing them in my job. With previous experience in startups, I bring development management skills, excelling in crafting detailed project plans, managing development KPIs, and fostering effective communication among team members.",
+    "location": "New Delhi",
     "email": "devmanjha@gmail.com",
-    "phone": "959-920-5371",
+    "phone": "+91-9599205371",
     "website": "https://psychicdree.github.io/manish-portfolio/"
   },
   "social": {
-    "facebook": {
-      "url": "https://www.facebook.com",
-      "username": "user.fb123",
-      "icon": "uil uil-facebook-f"
-    },
-    "instagram": {
-      "url": "https://www.instagram.com/happi_hippie________/",
-      "username": "happi_hippie________",
-      "icon": "uil uil-instagram"
-    },
-    "twitter": {
-      "url": "https://x.com/gamedevmanish",
-      "username": "gamedevmanish",
-      "icon": "uil uil-twitter"
-    },
     "linkedin": {
       "url": "https://www.linkedin.com/in/gamedev-manishjha",
       "username": "gamedev-manishjha",
@@ -33,22 +18,27 @@
       "url": "https://github.com/psychicDree",
       "username": "psychicDree",
       "icon": "uil uil-github-alt"
+    },
+    "youtube": {
+      "url": "https://youtu.be/4B6ER69yG74",
+      "username": "Manish Jha",
+      "icon": "uil uil-youtube"
+    },
+    "portfolio": {
+      "url": "https://psychicdree.github.io/manish-portfolio/",
+      "username": "Portfolio",
+      "icon": "uil uil-globe"
     }
   },
   "messaging": {
     "call": {
       "platform": "Call",
-      "phone": "959-920-5371",
+      "phone": "+91-9599205371",
       "icon": "uil uil-phone"
-    },
-    "messenger": {
-      "platform": "Facebook Messenger",
-      "username": "user.fb123",
-      "icon": "uil uil-facebook-messenger"
     },
     "whatsapp": {
       "platform": "WhatsApp",
-      "phone": "959-920-5371",
+      "phone": "+91-9599205371",
       "icon": "uil uil-whatsapp"
     },
     "email": {
@@ -64,147 +54,158 @@
   },
   "skills": {
     "primary": [
-      "Unity Development",
-      "Game Design",
+      "Unity Engine",
       "C# Programming",
-      "Gameplay Programming",
-      "Multiplayer Development"
+      "Game Development",
+      "Socket Programming",
+      "Project Management"
     ],
     "technologies": [
       "Unity",
       "C#",
-      "Photon",
-      "Firebase",
-      "MongoDB",
-      "UI/UX Design"
+      "C++",
+      "OpenAI",
+      "Blender",
+      "Unreal Engine",
+      "Blueprint",
+      "OpenGL",
+      "DirectX"
     ],
     "experience": "6+ years",
     "categories": {
       "unityDeveloper": {
         "id": "unityDeveloper",
-        "title": "Unity Developer",
+        "title": "Unity Development",
         "subtitle": "More than 6 years",
         "icon": "uil uil-brackets-curly",
         "skills": [
           {
-            "name": "Gameplay Programming",
-            "percentage": 90
-          },
-          {
-            "name": "Unity Rendering & UI Systems",
-            "percentage": 95
-          },
-          {
-            "name": "UI Animation & Effects",
-            "percentage": 90
+            "name": "Unity Engine",
+            "percentage": 100
           },
           {
             "name": "C# Programming",
-            "percentage": 90
+            "percentage": 100
           },
           {
-            "name": "ScriptableObject Architecture",
-            "percentage": 80
+            "name": "Game Experience",
+            "percentage": 100
+          },
+          {
+            "name": "Socket Programming",
+            "percentage": 100
+          },
+          {
+            "name": "Business Planning",
+            "percentage": 100
+          },
+          {
+            "name": "Project Management",
+            "percentage": 100
           }
         ]
       },
       "levelDesigner": {
         "id": "levelDesigner",
-        "title": "Level Designer",
-        "subtitle": "More than 1 year",
+        "title": "3D Design & Modeling",
+        "subtitle": "More than 3 years",
         "icon": "uil uil-swatchbook",
         "skills": [
           {
-            "name": "Cinemachine",
-            "percentage": 70
-          },
-          {
-            "name": "ProBuilder",
-            "percentage": 65
-          },
-          {
-            "name": "NavMesh / AI Setup",
-            "percentage": 60
-          },
-          {
-            "name": "Unity Lighting",
-            "percentage": 95
-          },
-          {
-            "name": "Post-Processing",
-            "percentage": 90
-          },
-          {
             "name": "Blender",
+            "percentage": 80
+          },
+          {
+            "name": "Figma",
             "percentage": 60
           },
           {
-            "name": "3ds Max",
-            "percentage": 50
+            "name": "Photoshop",
+            "percentage": 60
           },
           {
-            "name": "Maya",
-            "percentage": 50
+            "name": "Unreal Engine",
+            "percentage": 80
+          },
+          {
+            "name": "Blueprint",
+            "percentage": 100
+          },
+          {
+            "name": "Shader",
+            "percentage": 60
+          },
+          {
+            "name": "OpenGL",
+            "percentage": 100
+          },
+          {
+            "name": "DirectX",
+            "percentage": 100
           }
         ]
       },
       "multiplayerDevelopment": {
         "id": "multiplayerDevelopment",
-        "title": "Multiplayer Development",
+        "title": "Backend & Networking",
         "subtitle": "More than 5 years",
         "icon": "uil uil-server-network",
         "skills": [
           {
-            "name": "Photon Fusion 2",
-            "percentage": 85
+            "name": "Socket Programming",
+            "percentage": 100
           },
           {
-            "name": "Unity Netcode for GameObjects",
-            "percentage": 75
-          },
-          {
-            "name": "Unity Lobby & Relay",
-            "percentage": 70
-          },
-          {
-            "name": "Socket.IO",
+            "name": "C++",
             "percentage": 80
           },
           {
-            "name": "Firebase",
-            "percentage": 75
+            "name": "GoLang",
+            "percentage": 60
           },
           {
-            "name": "MongoDB",
-            "percentage": 70
+            "name": "Node.JS",
+            "percentage": 60
+          },
+          {
+            "name": "OpenAI",
+            "percentage": 80
+          },
+          {
+            "name": "API Development",
+            "percentage": 90
           }
         ]
       },
       "nativeDevelopment": {
         "id": "nativeDevelopment",
-        "title": "Native Development",
-        "subtitle": "More than 2 years",
+        "title": "Mobile Game Development",
+        "subtitle": "More than 4 years",
         "icon": "uil uil-mobile-android",
         "skills": [
           {
-            "name": "Xcode",
-            "percentage": 50
+            "name": "Android Development",
+            "percentage": 90
           },
           {
-            "name": "Swift",
-            "percentage": 75
+            "name": "iOS Development",
+            "percentage": 80
           },
           {
-            "name": "Android Studio",
-            "percentage": 75
+            "name": "Google Play Store",
+            "percentage": 95
           },
           {
-            "name": "Kotlin",
-            "percentage": 60
+            "name": "Steam Platform",
+            "percentage": 85
           },
           {
-            "name": "React Native",
-            "percentage": 60
+            "name": "Epic Games Store",
+            "percentage": 85
+          },
+          {
+            "name": "Performance Optimization",
+            "percentage": 90
           }
         ]
       }
@@ -269,32 +270,34 @@
     ]
   },
   "about": {
-    "summary": "Experienced game developer with expertise in Unity development, gameplay programming, and multiplayer systems. Passionate about creating engaging gaming experiences and innovative solutions.",
+    "summary": "Senior Software Engineer with 6 years of experience driving impact projects to successful completion while consistently meeting quality targets. I'm a game enthusiast who loves reading up on the latest trends and implementing them in my job. With previous experience in startups, I bring development management skills, excelling in crafting detailed project plans, managing development KPIs, and fostering effective communication among team members.",
     "interests": [
       "Game Development",
-      "Unity Programming",
-      "Multiplayer Systems",
-      "UI/UX Design",
-      "Mobile Gaming"
+      "Unity Engine",
+      "C# Programming",
+      "Project Management",
+      "Mobile Gaming",
+      "NFT Gaming",
+      "Blockchain Technology"
     ],
     "education": {
       "degree": "Bachelor of Computer Applications",
-      "institution": "University of Technology",
-      "graduationYear": "2019",
-      "gpa": "3.8/4.0"
+      "institution": "SOS Hermann Gmeiner School",
+      "graduationYear": "2016",
+      "gpa": "N/A"
     },
     "certifications": [
       {
-        "name": "Unity Certified Developer",
-        "issuer": "Unity Technologies",
-        "year": "2022",
-        "validity": "2025"
+        "name": "Unity Engine Expert",
+        "issuer": "Self-Certified",
+        "year": "2020",
+        "validity": "Ongoing"
       },
       {
-        "name": "C# Programming Certification",
-        "issuer": "Microsoft",
-        "year": "2021",
-        "validity": "2024"
+        "name": "Game Development Specialist",
+        "issuer": "Industry Experience",
+        "year": "2020",
+        "validity": "Ongoing"
       }
     ]
   }

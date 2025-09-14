@@ -86,34 +86,34 @@ export default function About() {
                 <h3 className="timeline-title">Passion Gaming Pvt. Ltd. (Gurugram, India)</h3>
                 <p className="timeline-text">Senior Unity Developer SDE-II</p>
                 <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>2024 - Present
+                  <i className="uil uil-calendar-alt"></i>September 2024 - August 2025
                 </span>
               </div>
 
               <div className="timeline-item">
                 <div className="circle-dot"></div>
-                <h3 className="timeline-title">Jurval Corp. (Navarra, Spain)</h3>
-                <p className="timeline-text">Team Lead SDE-II</p>
+                <h3 className="timeline-title">SwordField Technologies (Ranchi, India)</h3>
+                <p className="timeline-text">Team Lead</p>
                 <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>2023 - 2024
+                  <i className="uil uil-calendar-alt"></i>February 2023 - September 2024
                 </span>
               </div>
 
               <div className="timeline-item">
                 <div className="circle-dot"></div>
-                <h3 className="timeline-title">Techbeliever Pvt. Ltd. (Noida, India)</h3>
-                <p className="timeline-text">Unity Developer SDE-I</p>
+                <h3 className="timeline-title">TechBeliever Pvt. Ltd. (Noida, India)</h3>
+                <p className="timeline-text">Game Developer</p>
                 <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>2021 - 2023
+                  <i className="uil uil-calendar-alt"></i>March 2021 - February 2023
                 </span>
               </div>
 
               <div className="timeline-item">
                 <div className="circle-dot"></div>
-                <h3 className="timeline-title">Pinktech Design (Delhi, India)</h3>
-                <p className="timeline-text">Junior Unity Developer</p>
+                <h3 className="timeline-title">PinkTech Design Pvt. Ltd. (New Delhi, India)</h3>
+                <p className="timeline-text">Game Developer</p>
                 <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>2020 - 2021
+                  <i className="uil uil-calendar-alt"></i>July 2020 - March 2021
                 </span>
               </div>
             </div>

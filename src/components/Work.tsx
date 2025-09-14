@@ -20,340 +20,132 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: 'app-backend',
+    title: 'Rummy Passion',
     category: 'game',
     details: {
-      title: 'app-backend',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/app-backend'
+      title: 'Rummy Passion - Card Game',
+      description: 'Developing Tools and Pipelines for Rummy Passion to streamline development and reduce iteration time. Optimized code for maximum performance and efficiency, resulting in a 20% improvement in app response time.',
+      created: '2024',
+      technologies: 'Unity, C#, Socket Programming, Cloud Content, Addressables',
+      role: 'Software Developer (SDE-2)',
+      view: 'https://github.com/psychicDree'
     }
   },
   {
     id: 2,
-    title: 'app-gdk-diagrams',
+    title: 'Warland Realm',
     category: 'game',
     details: {
-      title: 'app-gdk-diagrams',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/app-gdk-diagrams'
+      title: 'Warland Realm - NFT eSports Game',
+      description: 'NFT-based eSports Competitive Game. Implemented Creatures, Player and Bots Locomotion Systems to support multiplayer aspect like performance, synchronization, and reusability. Worked on MOBA and Battle Royale mechanics for 5v5 gameplay.',
+      created: '2023-2024',
+      technologies: 'Unity, C#, Unreal Engine, Blueprint, Blockchain',
+      role: 'Team Lead',
+      view: 'https://github.com/psychicDree'
     }
   },
   {
     id: 3,
-    title: 'app-server',
+    title: 'Underground Waifus',
     category: 'game',
     details: {
-      title: 'app-server',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/app-server'
+      title: 'Underground Waifus - NFT TCG',
+      description: 'Successfully launched a NFT-based TCG on Steam, Epic, and Android platforms. Engineered play-to-earn systems using blockchain technology. Reduced loading times by 25% through optimization.',
+      created: '2023-2024',
+      technologies: 'Unity, C#, Blockchain, Steam SDK, Epic Games Store',
+      role: 'Team Lead',
+      view: 'https://github.com/psychicDree'
     }
   },
   {
     id: 4,
-    title: 'AssignmentInventory',
+    title: 'Khiladi Adda Games',
     category: 'game',
     details: {
-      title: 'AssignmentInventory',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/AssignmentInventory'
+      title: 'Khiladi Adda - Multiplayer Games',
+      description: 'Created Multiplayer Ludo and Card Game Court Piece for Internal product Integration. Built Multiplayer Board Games, Ludo for internal product integration, and Chess Game Published on Google Play Store.',
+      created: '2021-2023',
+      technologies: 'Unity, C#, Photon Engine, Socket.IO, Playfab, Firebase',
+      role: 'Game Developer',
+      view: 'https://github.com/psychicDree'
     }
   },
   {
     id: 5,
-    title: 'AsyncLoadingScreen',
+    title: 'Beat Killer',
     category: 'game',
     details: {
-      title: 'AsyncLoadingScreen',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/AsyncLoadingScreen'
+      title: 'Beat Killer - 3D Audio Game',
+      description: 'Created a 3D Singleplayer Audio-based game published on Google Play Store. Research the demographics and statistics relating to the game to determine the type of gameplay to use.',
+      created: '2020-2021',
+      technologies: 'Unity, C#, Firebase, Facebook SDK, Google SDK, Google Admob',
+      role: 'Game Developer',
+      view: 'https://github.com/psychicDree'
     }
   },
   {
     id: 6,
-    title: 'BikeController',
+    title: 'Unity Script Collection',
     category: 'game',
     details: {
-      title: 'BikeController',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/BikeController'
-    }
-  },
-  {
-    id: 7,
-    title: 'CortexAI',
-    category: 'game',
-    details: {
-      title: 'CortexAI',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/CortexAI'
-    }
-  },
-  {
-    id: 8,
-    title: 'Cricket-Game',
-    category: 'game',
-    details: {
-      title: 'Cricket-Game',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/Cricket-Game'
-    }
-  },
-  {
-    id: 9,
-    title: 'demo-rpg',
-    category: 'game',
-    details: {
-      title: 'demo-rpg',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/demo-rpg'
-    }
-  },
-  {
-    id: 10,
-    title: 'game-template',
-    category: 'game',
-    details: {
-      title: 'game-template',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/game-template'
-    }
-  },
-  {
-    id: 11,
-    title: 'GameClient',
-    category: 'game',
-    details: {
-      title: 'GameClient',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/GameClient'
-    }
-  },
-  {
-    id: 12,
-    title: 'gamedev-maths-c-',
-    category: 'game',
-    details: {
-      title: 'gamedev-maths-c-',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/gamedev-maths-c-'
-    }
-  },
-  {
-    id: 13,
-    title: 'GameServer',
-    category: 'game',
-    details: {
-      title: 'GameServer',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/GameServer'
-    }
-  },
-  {
-    id: 14,
-    title: 'learn-coding-ios-app',
-    category: 'game',
-    details: {
-      title: 'learn-coding-ios-app',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/learn-coding-ios-app'
-    }
-  },
-  {
-    id: 15,
-    title: 'lego-engine',
-    category: 'game',
-    details: {
-      title: 'lego-engine',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/lego-engine'
-    }
-  },
-  {
-    id: 16,
-    title: 'manish-portfolio',
-    category: 'game',
-    details: {
-      title: 'manish-portfolio',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/manish-portfolio'
-    }
-  },
-  {
-    id: 17,
-    title: 'Multiplyer-Sample-in-Unity-2019-using-Photon',
-    category: 'game',
-    details: {
-      title: 'Multiplyer-Sample-in-Unity-2019-using-Photon',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/Multiplyer-Sample-in-Unity-2019-using-Photon'
-    }
-  },
-  {
-    id: 18,
-    title: 'OpenGL-Tutorials',
-    category: 'game',
-    details: {
-      title: 'OpenGL-Tutorials',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/OpenGL-Tutorials'
-    }
-  },
-  {
-    id: 19,
-    title: 'Procedural-Planet',
-    category: 'game',
-    details: {
-      title: 'Procedural-Planet',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/Procedural-Planet'
-    }
-  },
-  {
-    id: 20,
-    title: 'proxy-list',
-    category: 'game',
-    details: {
-      title: 'proxy-list',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/proxy-list'
-    }
-  },
-  {
-    id: 21,
-    title: 'SquareAndRectangle',
-    category: 'game',
-    details: {
-      title: 'SquareAndRectangle',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/SquareAndRectangle'
-    }
-  },
-  {
-    id: 22,
-    title: 'SWAT-In-City',
-    category: 'game',
-    details: {
-      title: 'SWAT-In-City',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/SWAT-In-City'
-    }
-  },
-  {
-    id: 23,
-    title: 'swift-frontend-rive-ui',
-    category: 'game',
-    details: {
-      title: 'swift-frontend-rive-ui',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/swift-frontend-rive-ui'
-    }
-  },
-  {
-    id: 24,
-    title: 'Unity-Script-Collection',
-    category: 'game',
-    details: {
-      title: 'Unity-Script-Collection',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
+      title: 'Unity Script Collection',
+      description: 'Collection of reusable Unity scripts and utilities for game development. Includes various gameplay mechanics, UI systems, and optimization tools.',
+      created: '2020-2024',
+      technologies: 'Unity, C#, Game Development',
+      role: 'Developer',
       view: 'https://github.com/psychicDree/Unity-Script-Collection'
     }
   },
   {
-    id: 25,
-    title: 'user-interface-cpp',
+    id: 7,
+    title: 'OpenGL Tutorials',
     category: 'game',
     details: {
-      title: 'user-interface-cpp',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/user-interface-cpp'
+      title: 'OpenGL Graphics Programming',
+      description: 'Educational content and tutorials for OpenGL graphics programming. Covers shader programming, 3D rendering, and graphics optimization techniques.',
+      created: '2020-2024',
+      technologies: 'OpenGL, C++, Graphics Programming',
+      role: 'Developer',
+      view: 'https://github.com/psychicDree/OpenGL-Tutorials'
     }
   },
   {
-    id: 26,
-    title: 'Zombie-Apocolypse---3D',
+    id: 8,
+    title: 'Multiplayer Unity Sample',
     category: 'game',
     details: {
-      title: 'Zombie-Apocolypse---3D',
-      description: 'GitHub repository',
-      created: '-',
-      technologies: '-',
-      role: 'Owner',
-      view: 'https://github.com/psychicDree/Zombie-Apocolypse---3D'
+      title: 'Multiplayer Unity with Photon',
+      description: 'Sample project demonstrating multiplayer game development using Unity and Photon networking. Includes lobby system, matchmaking, and real-time gameplay.',
+      created: '2019-2024',
+      technologies: 'Unity, C#, Photon, Multiplayer',
+      role: 'Developer',
+      view: 'https://github.com/psychicDree/Multiplyer-Sample-in-Unity-2019-using-Photon'
+    }
+  },
+  {
+    id: 9,
+    title: 'Procedural Planet Generator',
+    category: 'game',
+    details: {
+      title: 'Procedural Planet Generator',
+      description: 'Procedural generation system for creating realistic planets with terrain, atmosphere, and biomes. Uses advanced noise algorithms and shader programming.',
+      created: '2020-2024',
+      technologies: 'Unity, C#, Shaders, Procedural Generation',
+      role: 'Developer',
+      view: 'https://github.com/psychicDree/Procedural-Planet'
+    }
+  },
+  {
+    id: 10,
+    title: 'Game Development Math',
+    category: 'game',
+    details: {
+      title: 'Game Development Mathematics',
+      description: 'Mathematical utilities and algorithms commonly used in game development. Includes vector operations, collision detection, and physics calculations.',
+      created: '2020-2024',
+      technologies: 'C++, Mathematics, Game Physics',
+      role: 'Developer',
+      view: 'https://github.com/psychicDree/gamedev-maths-c-'
     }
   }
 ]

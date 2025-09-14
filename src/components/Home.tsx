@@ -6,7 +6,6 @@ import { getAssetPath } from '@/utils/paths'
 
 // Access your data
 const { name, title, email } = personalInfo.personal
-const { facebook, instagram } = personalInfo.social
 
 export default function Home() {
   return (
@@ -15,16 +14,20 @@ export default function Home() {
         <div className="home-social">
           <span className="home-social-follow">Follow Me</span>
           <div className="home-social-links">
-            <a href={instagram.url} target="_blank" className="home-social-link">
-              <i className={instagram.icon}></i>
-            </a>
-
-            <a href={personalInfo.social.twitter.url} target="_blank" className="home-social-link">
-              <i className={personalInfo.social.twitter.icon}></i>
-            </a>
-
             <a href={personalInfo.social.linkedin.url} target="_blank" className="home-social-link">
               <i className={personalInfo.social.linkedin.icon}></i>
+            </a>
+
+            <a href={personalInfo.social.github.url} target="_blank" className="home-social-link">
+              <i className={personalInfo.social.github.icon}></i>
+            </a>
+
+            <a href={personalInfo.social.youtube.url} target="_blank" className="home-social-link">
+              <i className={personalInfo.social.youtube.icon}></i>
+            </a>
+
+            <a href={personalInfo.social.portfolio.url} target="_blank" className="home-social-link">
+              <i className={personalInfo.social.portfolio.icon}></i>
             </a>
           </div>
         </div>
@@ -45,10 +48,10 @@ export default function Home() {
 
         <div className="my-info">
           <div className="info-item">
-            <i className={`${personalInfo.messaging.messenger.icon} info-icon`}></i>
+            <i className={`${personalInfo.messaging.call.icon} info-icon`}></i>
             <div>
-              <h3 className="info-title">{personalInfo.messaging.messenger.platform}</h3>
-              <span className="info-subtitle">{personalInfo.messaging.messenger.username}</span>
+              <h3 className="info-title">{personalInfo.messaging.call.platform}</h3>
+              <span className="info-subtitle">{personalInfo.messaging.call.phone}</span>
             </div>
           </div>
 
