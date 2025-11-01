@@ -85,7 +85,7 @@ export default function Home() {
             >
               <div className="resume-preview-image-container">
                 <img 
-                  src={getAssetPath("/resume_page-0001.png")} 
+                  src={getAssetPath("/resume_page-0001.jpg")} 
                   alt="Resume preview - Click to view full PDF" 
                   className="resume-preview-image"
                   loading="lazy"
