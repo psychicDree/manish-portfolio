@@ -2,10 +2,15 @@
 
 import { useState, useEffect } from 'react'
 import personalInfo from '@/data/personalInfo.json'
+import { portfolioItems } from '@/data/projects'
 import { getAssetPath } from '@/utils/paths'
 
 // Access your data
 const { name, title, email } = personalInfo.personal
+
+// Derived from the same list the Work section links out to, so the hero can
+// never drift from what is actually on the site.
+const shippedCount = portfolioItems.filter((item) => item.status === 'Released').length
 
 export default function Home() {
   return (
@@ -37,9 +42,26 @@ export default function Home() {
         }} />
 
         <div className="home-data">
-          <h1 className="home-title">Hi, I'm {name}</h1>
+          <h1 className="home-title">Hi, I'm <span className="home-name">{name}</span></h1>
           <h3 className="home-subtitle">{title}</h3>
           <p className="home-description">{personalInfo.personal.description}</p>
+
+          <dl className="home-spec">
+            <dt>Based</dt>
+            <dd>{personalInfo.personal.location}, India</dd>
+            <dt>Experience</dt>
+            <dd>{personalInfo.skills.experience}</dd>
+            <dt>Shipped</dt>
+            <dd>{shippedCount} titles</dd>
+            <dt>Focus</dt>
+            <dd>Multiplayer &middot; Live-ops &middot; Tools</dd>
+          </dl>
+
+          <ul className="home-chips">
+            {personalInfo.skills.technologies.slice(0, 6).map((tech) => (
+              <li key={tech} className="home-chip">{tech}</li>
+            ))}
+          </ul>
           <a href="#about" className="button">
             <i className="uil uil-user button-icon"></i>
             More About me!

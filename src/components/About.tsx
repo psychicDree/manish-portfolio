@@ -47,79 +47,54 @@ export default function About() {
         <h2 className="section-title" data-heading="My Journey">Qualifications</h2>
 
         <div className="qualification-container container grid">
-          <div className="education">
-            <h3 className="qualification-title">
-              <i className="uil uil-graduation-cap"></i>Education
-            </h3>
-
-            <div className="timeline">
-              <div className="timeline-item">
-                <div className="circle-dot"></div>
-                <h3 className="timeline-title">{personalInfo.about.education.institution}</h3>
-                <p className="timeline-text">{personalInfo.about.education.degree}</p>
-                <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>{personalInfo.about.education.graduationYear}
-                </span>
-              </div>
-
-              <div className="timeline-item">
-                <div className="circle-dot"></div>
-                <h3 className="timeline-title">SOS Hermann Gmeiner School (Faridabad, Haryana)</h3>
-                <p className="timeline-text">High School</p>
-                <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>2013 - 2016
-                </span>
-              </div>
-
-              
-            </div>
-          </div>
-
           <div className="experience">
             <h3 className="qualification-title">
               <i className="uil uil-suitcase"></i>Experience
             </h3>
 
             <div className="timeline">
-              <div className="timeline-item">
-                <div className="circle-dot"></div>
-                <h3 className="timeline-title">Passion Gaming Pvt. Ltd. (Gurugram, India)</h3>
-                <p className="timeline-text">Senior Unity Developer SDE-II</p>
-                <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>September 2024 - August 2025
-                </span>
-              </div>
+              {personalInfo.about.experience.map((job) => (
+                <div className="timeline-item" key={`${job.company}-${job.period}`}>
+                  <div className="circle-dot"></div>
+                  <h3 className="timeline-title">
+                    {job.company}
+                    {job.project && <span className="timeline-project"> · {job.project}</span>}
+                  </h3>
+                  <p className="timeline-text">{job.role}</p>
+                  <span className="timeline-date">
+                    <i className="uil uil-calendar-alt"></i>{job.period} · {job.location}
+                  </span>
+                  <ul className="timeline-highlights">
+                    {job.highlights.map((line) => (
+                      <li key={line}>{line}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
 
-              <div className="timeline-item">
-                <div className="circle-dot"></div>
-                <h3 className="timeline-title">SwordField Technologies (Ranchi, India)</h3>
-                <p className="timeline-text">Team Lead</p>
-                <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>February 2023 - September 2024
-                </span>
-              </div>
+          <div className="education">
+            <h3 className="qualification-title">
+              <i className="uil uil-graduation-cap"></i>Education
+            </h3>
 
-              <div className="timeline-item">
-                <div className="circle-dot"></div>
-                <h3 className="timeline-title">TechBeliever Pvt. Ltd. (Noida, India)</h3>
-                <p className="timeline-text">Game Developer</p>
-                <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>March 2021 - February 2023
-                </span>
-              </div>
-
-              <div className="timeline-item">
-                <div className="circle-dot"></div>
-                <h3 className="timeline-title">PinkTech Design Pvt. Ltd. (New Delhi, India)</h3>
-                <p className="timeline-text">Game Developer</p>
-                <span className="timeline-date">
-                  <i className="uil uil-calendar-alt"></i>July 2020 - March 2021
-                </span>
-              </div>
+            <div className="timeline">
+              {personalInfo.about.education.map((entry) => (
+                <div className="timeline-item" key={entry.institution}>
+                  <div className="circle-dot"></div>
+                  <h3 className="timeline-title">{entry.institution}</h3>
+                  <p className="timeline-text">{entry.degree}</p>
+                  <span className="timeline-date">
+                    <i className="uil uil-calendar-alt"></i>{entry.period}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
+
     </>
   )
 } 

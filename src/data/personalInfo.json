@@ -209,7 +209,84 @@
           }
         ]
       }
-    }
+    },
+    "matrix": [
+      {
+        "id": "engine",
+        "title": "Engine & tools",
+        "icon": "uil uil-brackets-curly",
+        "tech": [
+          "Unity 6",
+          "C#",
+          "URP",
+          "Addressables",
+          "Input System",
+          "ScriptableObject pipelines",
+          "Editor tooling"
+        ],
+        "applied": "Build pipelines and iteration tooling at Passion Gaming. ScriptableObject-driven level and balance data across all three Nexenova titles. 20% app response time and 25% load-time improvements from profiling work."
+      },
+      {
+        "id": "multiplayer",
+        "title": "Multiplayer & networking",
+        "icon": "uil uil-server-network",
+        "tech": [
+          "Photon",
+          "Socket.IO",
+          "Socket architecture",
+          "REST APIs",
+          "State synchronisation"
+        ],
+        "applied": "Locomotion sync for players, bots and creatures on Warlands. Turn state, auto-moves and turn indicators across Ludo, Court Piece and Chess. Socket and API architecture for a live real-money card platform."
+      },
+      {
+        "id": "liveops",
+        "title": "Live ops & monetisation",
+        "icon": "uil uil-chart-line",
+        "tech": [
+          "UGS Authentication",
+          "Cloud Save",
+          "Economy",
+          "Cloud Code",
+          "Remote Config",
+          "ironSource LevelPlay",
+          "Unity IAP",
+          "AdMob",
+          "PlayFab",
+          "Firebase"
+        ],
+        "applied": "Server-owned progression and currency across three shipped Nexenova titles, with ads, IAP and remote tuning behind one shared platform layer."
+      },
+      {
+        "id": "platforms",
+        "title": "Platforms & release",
+        "icon": "uil uil-mobile-android",
+        "tech": [
+          "Google Play",
+          "Steam SDK",
+          "Epic Games Store",
+          "Android",
+          "iOS",
+          "WebGL"
+        ],
+        "applied": "Underground Waifus launched on Steam, Epic and Android off one codebase. Five titles published to Google Play."
+      },
+      {
+        "id": "graphics",
+        "title": "Languages & graphics",
+        "icon": "uil uil-vector-square",
+        "tech": [
+          "C#",
+          "C++",
+          "OpenGL",
+          "DirectX",
+          "Shaders",
+          "Procedural generation",
+          "Game mathematics"
+        ],
+        "applied": "Open-source OpenGL tutorials, a procedural planet generator and a game-development maths library. Currently building a console RPG in C++."
+      }
+    ]
   },
   "references": {
     "professional": [
@@ -280,12 +357,18 @@
       "NFT Gaming",
       "Blockchain Technology"
     ],
-    "education": {
-      "degree": "Bachelor of Computer Applications",
-      "institution": "Arunachal University",
-      "graduationYear": "2016",
-      "gpa": "N/A"
-    },
+    "education": [
+      {
+        "institution": "Arunachal University",
+        "degree": "Bachelor of Computer Applications",
+        "period": "2016"
+      },
+      {
+        "institution": "SOS Hermann Gmeiner School",
+        "degree": "High School",
+        "period": "2013 - 2016"
+      }
+    ],
     "certifications": [
       {
         "name": "Unity Engine Expert",
@@ -299,6 +382,68 @@
         "year": "2020",
         "validity": "Ongoing"
       }
+    ],
+    "experience": [
+      {
+        "company": "Nexenova Studios",
+        "project": "",
+        "role": "Founder & Game Developer",
+        "period": "2025 - Present",
+        "location": "New Delhi, India",
+        "highlights": [
+          "Shipped three titles to Google Play: Park Escape, Last Turn and Endless Merge 2048.",
+          "Built on Unity 6 with the full Unity Gaming Services stack, so progression and currency are server-owned rather than trusted to the device.",
+          "Runs the whole pipeline solo: design, build, live services, store release."
+        ]
+      },
+      {
+        "company": "Passion Gaming Pvt. Ltd.",
+        "project": "Rummy Passion",
+        "role": "Senior Software Engineer",
+        "period": "September 2024 - August 2025",
+        "location": "Gurugram, India",
+        "highlights": [
+          "Designed a sustainable architecture for the socket and API layer of a live real-money product.",
+          "Built tools and pipelines that cut the team’s iteration time.",
+          "Cut download size with Cloud Content Delivery and Addressables; 20% improvement in app response time."
+        ]
+      },
+      {
+        "company": "SwordField Technologies",
+        "project": "Warlands NFT",
+        "role": "Development Team Lead",
+        "period": "August 2022 - September 2024",
+        "location": "Ranchi, India",
+        "highlights": [
+          "Launched Underground Waifus, an NFT TCG, on Steam, Epic Games Store and Android — 25% reduction in loading times.",
+          "Implemented locomotion for players, bots and creatures, designed for network synchronisation and reuse across actor types.",
+          "Built MOBA and battle-royale mechanics for 5v5, and the play-to-earn systems behind them."
+        ]
+      },
+      {
+        "company": "TechBeliever Pvt. Ltd.",
+        "project": "Khiladi Adda",
+        "role": "Game Developer",
+        "period": "March 2021 - August 2022",
+        "location": "Noida, India",
+        "highlights": [
+          "Built multiplayer Ludo and the card game Court Piece for internal product integration; shipped Chess to Google Play.",
+          "Solved the turn-based multiplayer problems that actually bite: auto moves, turn indicators and the UI state around them.",
+          "Integrated Photon, Socket.IO, PlayFab and Firebase across the titles."
+        ]
+      },
+      {
+        "company": "PinkTech Design Pvt. Ltd.",
+        "project": "Beat Killer",
+        "role": "Game Developer",
+        "period": "July 2020 - March 2021",
+        "location": "New Delhi, India",
+        "highlights": [
+          "Shipped Beat Killer to Google Play: a rhythm game with no tapping, 30+ songs and 20+ dynamic backgrounds.",
+          "Researched genre demographics and market data to settle the gameplay direction before building it.",
+          "Integrated Firebase, the Facebook and Google SDKs, and AdMob."
+        ]
+      }
     ]
   }
-} 
+}

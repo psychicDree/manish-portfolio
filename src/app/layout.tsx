@@ -1,8 +1,19 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import '../styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+// Body text. `variable` feeds --body-font in globals.css; `className` still sets
+// the family on <body> so every element inherits it.
+const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-body' })
+
+// Technical voice: every label, date, metric, nav item and spec row. Feeds
+// --mono-font. Self-hosted through next/font so no CDN request blocks paint.
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+  variable: '--font-mono',
+})
 
 export const metadata: Metadata = {
   title: 'Manish Jha - Game Developer Portfolio',
@@ -38,17 +49,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0a0a0f" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        {/* Force fresh deployment - Game Developer Portfolio */}
       </head>
       <body className={inter.className}>
         {children}
       </body>
     </html>
   )
-} 
+}
