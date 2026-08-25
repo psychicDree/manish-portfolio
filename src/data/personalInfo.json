@@ -387,13 +387,13 @@
       {
         "company": "Nexenova Studios",
         "project": "",
-        "role": "Founder & Game Developer",
+        "role": "Technical Head",
         "period": "2025 - Present",
         "location": "New Delhi, India",
         "highlights": [
           "Shipped three titles to Google Play: Park Escape, Last Turn and Endless Merge 2048.",
           "Built on Unity 6 with the full Unity Gaming Services stack, so progression and currency are server-owned rather than trusted to the device.",
-          "Runs the whole pipeline solo: design, build, live services, store release."
+          "Sets the technical direction across the portfolio: Unity 6 and URP, the UGS service layer, and the ad and IAP mediation stack."
         ]
       },
       {

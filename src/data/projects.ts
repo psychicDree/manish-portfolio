@@ -62,7 +62,7 @@ export const portfolioItems: PortfolioItem[] = [
     caseStudy: {
       headline: 'A timed car-untangling puzzle built on Unity 6 with the full Unity Gaming Services stack behind it.',
       context:
-        'First title shipped under Nexenova Studios, released on Google Play. Solo build, from the puzzle rules through to the live-services backend and ad monetisation.',
+        'First title shipped under Nexenova Studios, released on Google Play. Covered the puzzle rules, the live-services backend and the ad monetisation.',
       challenge:
         'A puzzle game lives or dies on its level pipeline. Each level is a graph of paths, gates, poles and buttons that has to be authorable quickly, verifiably solvable, and re-tunable after launch without shipping a new binary.',
       contributions: [
@@ -85,7 +85,7 @@ export const portfolioItems: PortfolioItem[] = [
       description: 'Released on Google Play. Tap cars to drive them along their paths to matching finish lines before the timer runs out, working around gates, poles and buttons. Built on Unity 6 with URP and the new Input System, with the full Unity Gaming Services stack behind it.',
       created: '2026',
       technologies: 'Unity 6, C#, URP, Input System, UGS (Auth, Cloud Save, Economy, Cloud Code), AdMob',
-      role: 'Founder & Game Developer, Nexenova Studios',
+      role: 'Technical Head, Nexenova Studios',
       view: 'https://play.google.com/store/apps/details?id=com.nexenova.ParkEscape'
     }
   },
@@ -125,7 +125,7 @@ export const portfolioItems: PortfolioItem[] = [
       description: 'Released on Google Play. A one-touch 2D car game shipping two modes from one codebase: an endless run with escalating difficulty, and a finite level mode with win/lose states. Live services, ads and real-money purchases all run through a shared platform layer.',
       created: '2026',
       technologies: 'Unity 6, C#, URP 2D, UGS (Auth, Economy, Cloud Save, Remote Config), ironSource LevelPlay, Unity IAP',
-      role: 'Founder & Game Developer, Nexenova Studios',
+      role: 'Technical Head, Nexenova Studios',
       view: 'https://play.google.com/store/apps/details?id=com.nexenova.lastturn'
     }
   },
@@ -163,7 +163,7 @@ export const portfolioItems: PortfolioItem[] = [
       description: 'Released on Google Play. A 3D merge game where shot cubes collide and combine 2048-style on a physics board, with bomb and magnet power-ups and a configurable gravity direction. Built on an in-house Unity framework covering UI paging, tweening, audio, haptics and save state.',
       created: '2026',
       technologies: 'Unity 6, C#, 3D physics, ScriptableObject-driven balance, in-house LogcatBELLY framework',
-      role: 'Founder & Game Developer, Nexenova Studios',
+      role: 'Technical Head, Nexenova Studios',
       view: 'https://play.google.com/store/apps/details?id=com.nexenova.endlessmerge'
     }
   },
