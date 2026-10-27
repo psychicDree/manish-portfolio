@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { portfolioItems, type PortfolioItem, type ProjectStatus } from '@/data/projects'
+import { portfolioItems, type PortfolioItem, type ProjectCollection, type ProjectStatus } from '@/data/projects'
 import { getAssetPath } from '@/utils/paths'
 
 type Filter = 'all' | ProjectStatus
@@ -12,9 +12,11 @@ type Filter = 'all' | ProjectStatus
 const FILTERS: { id: Filter; label: string }[] = [
   { id: 'all', label: 'All' },
   { id: 'Released', label: 'Shipped' },
-  { id: 'Alpha', label: 'In development' },
+  { id: 'In development', label: 'In development' },
   { id: 'Open source', label: 'Open source' },
 ]
+
+const COLLECTIONS: ProjectCollection[] = ['Hypercasual Games', 'Casual Games — In Development']
 
 export default function Work() {
   const [activeFilter, setActiveFilter] = useState<Filter>('all')
@@ -22,10 +24,10 @@ export default function Work() {
   const visibleItems =
     activeFilter === 'all'
       ? portfolioItems
-      : portfolioItems.filter((item) => item.status === activeFilter)
+      : portfolioItems.filter((item) => item.status === activeFilter || (activeFilter === 'In development' && item.status === 'Alpha'))
 
   const featuredItems = visibleItems.filter((item) => item.featured)
-  const restItems = visibleItems.filter((item) => !item.featured)
+  const restItems = visibleItems.filter((item) => !item.featured && !item.collection)
 
   const statusClass = (status: ProjectStatus) =>
     `case-status case-status-${status.toLowerCase().replace(/\s+/g, '-')}`
@@ -48,7 +50,7 @@ export default function Work() {
 
       <div className="work-card-meta">
         <span className={statusClass(item.status)}>{item.status}</span>
-        <span>{item.year}</span>
+        {item.year && <span>{item.year}</span>}
         <span>{item.platform}</span>
       </div>
 
@@ -57,9 +59,16 @@ export default function Work() {
         {item.caseStudy?.headline || item.details.description}
       </p>
 
-      <Link href={`/work/${item.slug}`} className="work-button">
-        Case study<i className="uil uil-arrow-right work-button-icon"></i>
-      </Link>
+      <div className="work-card-actions">
+        {item.collection && (
+          <a href={item.details.view} target="_blank" rel="noopener noreferrer" className="work-button">
+            {item.details.linkLabel || 'Google Play'}<i className="uil uil-external-link-alt work-button-icon"></i>
+          </a>
+        )}
+        <Link href={`/work/${item.slug}`} className="work-button">
+          {item.caseStudy ? 'Case study' : 'Project details'}<i className="uil uil-arrow-right work-button-icon"></i>
+        </Link>
+      </div>
     </article>
   )
 
@@ -69,13 +78,15 @@ export default function Work() {
 
       <div className="work-filters">
         {FILTERS.map((filter) => (
-          <span
+          <button
             key={filter.id}
+            type="button"
+            aria-pressed={activeFilter === filter.id}
             className={`work-item ${activeFilter === filter.id ? 'active-work' : ''}`}
             onClick={() => setActiveFilter(filter.id)}
           >
             {filter.label}
-          </span>
+          </button>
         ))}
       </div>
 
@@ -84,6 +95,20 @@ export default function Work() {
           {featuredItems.map((item) => renderCard(item))}
         </div>
       )}
+
+      {COLLECTIONS.map((collection) => {
+        const items = visibleItems.filter((item) => item.collection === collection)
+        if (items.length === 0) return null
+        return (
+          <div className="work-collection work-scroller-wrap container" key={collection}>
+            <h3 className="work-collection-title">{collection}</h3>
+            <p className="work-collection-description">
+              Nexenova Studios · {collection === 'Hypercasual Games' ? 'Released on Google Play' : 'Android APK builds'}
+            </p>
+            <div className="work-scroller">{items.map(renderCard)}</div>
+          </div>
+        )
+      })}
 
       {restItems.length > 0 && (
         <div className="work-scroller-wrap container">
@@ -114,9 +139,9 @@ export default function Work() {
                       {item.title}
                     </Link>
                   </td>
-                  <td>{item.year}</td>
+                  <td>{item.year || '—'}</td>
                   <td>{item.platform}</td>
-                  <td className="work-index-stack">{item.details.technologies}</td>
+                  <td className="work-index-stack">{item.details.technologies || '—'}</td>
                   <td>
                     <span className={statusClass(item.status)}>{item.status}</span>
                   </td>

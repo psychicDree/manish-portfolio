@@ -5,7 +5,9 @@
 // numbers), each Nexenova title's own CLAUDE.md, and the public store listings.
 // Anything not covered by one of those is left off rather than guessed at.
 
-export type ProjectStatus = 'Released' | 'Alpha' | 'Open source'
+// Nexenova additions and categories follow the approved October 2026 resume brief.
+export type ProjectStatus = 'Released' | 'Alpha' | 'In development' | 'Open source'
+export type ProjectCollection = 'Hypercasual Games' | 'Casual Games — In Development'
 
 export interface CaseStudy {
   /** One-line positioning, shown under the title on the case-study page. */
@@ -25,6 +27,7 @@ export interface PortfolioItem {
   slug: string
   title: string
   category: string
+  collection?: ProjectCollection
   year: string
   platform: string
   status: ProjectStatus
@@ -45,6 +48,7 @@ export interface PortfolioItem {
     technologies: string
     role: string
     view: string
+    linkLabel?: string
   }
 }
 
@@ -52,6 +56,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: 11,
     slug: 'park-escape',
+    collection: 'Hypercasual Games',
     title: 'Park Escape',
     category: 'game',
     year: '2026',
@@ -92,6 +97,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: 12,
     slug: 'last-turn',
+    collection: 'Hypercasual Games',
     title: 'Last Turn',
     category: 'game',
     year: '2026',
@@ -132,6 +138,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: 13,
     slug: 'endless-merge-2048',
+    collection: 'Hypercasual Games',
     title: 'Endless Merge 2048',
     category: 'game',
     year: '2026',
@@ -165,6 +172,143 @@ export const portfolioItems: PortfolioItem[] = [
       technologies: 'Unity 6, C#, 3D physics, ScriptableObject-driven balance, in-house LogcatBELLY framework',
       role: 'Technical Head, Nexenova Studios',
       view: 'https://play.google.com/store/apps/details?id=com.nexenova.endlessmerge'
+    }
+  },
+  {
+    id: 14,
+    slug: 'smashy-qube',
+    title: 'Smashy Qube',
+    category: 'game',
+    collection: 'Hypercasual Games',
+    year: '',
+    platform: 'Android',
+    status: 'Released',
+    image: '/games/smashy-qube.jpg',
+    imageFit: 'cover',
+    details: {
+      title: 'Smashy Qube',
+      description: 'A released hypercasual game from Nexenova Studios.',
+      created: '',
+      technologies: '',
+      role: 'Technical Head, Nexenova Studios',
+      view: 'https://play.google.com/store/apps/details?id=com.NexenovaStudios.SmashyQube'
+    }
+  },
+  {
+    id: 15,
+    slug: 'sweet-tumble',
+    title: 'Sweet Tumble',
+    category: 'game',
+    collection: 'Hypercasual Games',
+    year: '',
+    platform: 'Android',
+    status: 'Released',
+    image: '/games/sweet-tumble.jpg',
+    imageFit: 'cover',
+    details: {
+      title: 'Sweet Tumble',
+      description: 'A released hypercasual game from Nexenova Studios.',
+      created: '',
+      technologies: '',
+      role: 'Technical Head, Nexenova Studios',
+      view: 'https://play.google.com/store/apps/details?id=com.Nexenova.SortTheBears'
+    }
+  },
+  {
+    id: 16,
+    slug: 'twisty-snake',
+    title: 'Twisty Snake',
+    category: 'game',
+    collection: 'Hypercasual Games',
+    year: '',
+    platform: 'Android',
+    status: 'Released',
+    image: '/games/twisty-snake.jpg',
+    imageFit: 'cover',
+    details: {
+      title: 'Twisty Snake',
+      description: 'A released hypercasual game from Nexenova Studios.',
+      created: '',
+      technologies: '',
+      role: 'Technical Head, Nexenova Studios',
+      view: 'https://play.google.com/store/apps/details?id=com.Nexenova.TwistySnake'
+    }
+  },
+  {
+    id: 20,
+    slug: 'no-limit-arena',
+    title: 'No Limit Arena',
+    category: 'game',
+    collection: 'Hypercasual Games',
+    year: '',
+    platform: 'Android',
+    status: 'Released',
+    image: '/games/no-limit-arena.jpg',
+    imageFit: 'cover',
+    details: {
+      title: 'No Limit Arena',
+      description: 'A released game from Nexenova Studios.',
+      created: '',
+      technologies: '',
+      role: 'Technical Head, Nexenova Studios',
+      view: 'https://play.google.com/store/apps/details?id=com.NexenovaStudios.NoLimit'
+    }
+  },
+  {
+    id: 17,
+    slug: 'rubble-rivals',
+    title: 'Rubble Rivals',
+    category: 'game',
+    collection: 'Casual Games — In Development',
+    year: '',
+    platform: 'Android',
+    status: 'In development',
+    details: {
+      title: 'Rubble Rivals',
+      description: 'Multiplayer game using Netcode infrastructure.',
+      created: '',
+      technologies: 'Netcode',
+      role: 'Technical Head, Nexenova Studios',
+      view: 'https://drive.google.com/file/d/1cxT9wIXQky1-f3Fe184m81NGDGc7_6bU/view?usp=share_link',
+      linkLabel: 'Playable Android build'
+    }
+  },
+  {
+    id: 18,
+    slug: 'relic-rivals',
+    title: 'Relic Rivals',
+    category: 'game',
+    collection: 'Casual Games — In Development',
+    year: '',
+    platform: 'Android',
+    status: 'In development',
+    details: {
+      title: 'Relic Rivals',
+      description: 'Tower defense game.',
+      created: '',
+      technologies: '',
+      role: 'Technical Head, Nexenova Studios',
+      view: 'https://drive.google.com/file/d/1IaljUI1EFAd5uejWDfnuO8ufwx91p5yt/view?usp=share_link',
+      linkLabel: 'Playable Android build'
+    }
+  },
+  {
+    id: 19,
+    slug: 'loot-league',
+    title: 'Loot League',
+    category: 'game',
+    collection: 'Casual Games — In Development',
+    year: '',
+    platform: 'Android',
+    status: 'In development',
+    details: {
+      title: 'Loot League',
+      description: 'Multiplayer game.',
+      created: '',
+      technologies: '',
+      role: 'Technical Head, Nexenova Studios',
+      view: 'https://drive.google.com/file/d/1F3G9nrqpZpGf4RhVxCHFvxY_VF3u17vv/view?usp=share_link',
+      linkLabel: 'Playable Android build'
     }
   },
   {

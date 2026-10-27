@@ -17,14 +17,14 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Manish Jha - Game Developer Portfolio',
-  description: 'Manish Jha - Game Developer with 6+ years of experience in Unity development, game design, and UI/UX. View my portfolio of projects and skills.',
+  description: 'Manish Jha, Technical Head at Nexenova Studios. Studio leadership, game design, Unity development, multiplayer systems, and released and in-development games.',
   keywords: 'Game Developer, Unity Developer, Portfolio, Manish Jha, Game Design, UI/UX',
   authors: [{ name: 'Manish Jha' }],
   openGraph: {
     type: 'website',
     url: 'https://psychicDree.github.io/manish-portfolio/',
     title: 'Manish Jha - Game Developer Portfolio',
-    description: 'Game Developer with 6+ years of experience in Unity development, game design, and UI/UX. View my portfolio of projects and skills.',
+    description: 'Technical Head at Nexenova Studios. Explore my work in studio leadership, game design, Unity development, and multiplayer systems.',
     images: [
       {
         url: 'https://psychicDree.github.io/manish-portfolio/assets/home-img.png',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Manish Jha - Game Developer Portfolio',
-    description: 'Game Developer with 6+ years of experience in Unity development, game design, and UI/UX. View my portfolio of projects and skills.',
+    description: 'Technical Head at Nexenova Studios. Explore my work in studio leadership, game design, Unity development, and multiplayer systems.',
     images: ['https://psychicDree.github.io/manish-portfolio/assets/home-img.png'],
   },
 }

@@ -57,7 +57,9 @@ export default function About() {
                 <div className="timeline-item" key={`${job.company}-${job.period}`}>
                   <div className="circle-dot"></div>
                   <h3 className="timeline-title">
-                    {job.company}
+                    {'website' in job && job.website ? (
+                      <a href={job.website} target="_blank" rel="noopener noreferrer">{job.company}</a>
+                    ) : job.company}
                     {job.project && <span className="timeline-project"> · {job.project}</span>}
                   </h3>
                   <p className="timeline-text">{job.role}</p>
@@ -97,4 +99,4 @@ export default function About() {
 
     </>
   )
-} 
+}

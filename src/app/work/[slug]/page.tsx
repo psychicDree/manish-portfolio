@@ -55,11 +55,12 @@ export default async function ProjectPage({ params }: PageProps) {
             <span className={`case-status case-status-${project.status.toLowerCase().replace(/\s+/g, '-')}`}>
               {project.status}
             </span>
-            <span>{project.year}</span>
+            {project.year && <span>{project.year}</span>}
             <span>{project.platform}</span>
             <span>{project.details.role}</span>
           </div>
           <h1 className="case-title">{project.title}</h1>
+          {project.collection && <p className="case-collection">{project.collection}</p>}
           {study && <p className="case-headline">{study.headline}</p>}
         </header>
 
@@ -127,7 +128,7 @@ export default async function ProjectPage({ params }: PageProps) {
               {(study?.stack ?? [
                 { label: 'Stack', value: project.details.technologies },
                 { label: 'Role', value: project.details.role },
-              ]).map((row) => (
+              ]).filter((row) => row.value).map((row) => (
                 <div key={row.label} className="case-spec-row">
                   <dt>{row.label}</dt>
                   <dd>{row.value}</dd>
@@ -150,7 +151,7 @@ export default async function ProjectPage({ params }: PageProps) {
               className="button case-cta"
             >
               <i className="uil uil-external-link-alt button-icon"></i>
-              {project.details.view.includes('play.google.com') ? 'Google Play' : 'Source'}
+              {project.details.linkLabel || (project.details.view.includes('play.google.com') ? 'Google Play' : 'Source')}
             </a>
           </aside>
         </div>

@@ -54,7 +54,7 @@ export default function Home() {
             <dt>Shipped</dt>
             <dd>{shippedCount} titles</dd>
             <dt>Focus</dt>
-            <dd>Multiplayer &middot; Live-ops &middot; Tools</dd>
+            <dd>Studio leadership &middot; Game design &middot; Unity</dd>
           </dl>
 
           <ul className="home-chips">
@@ -98,17 +98,17 @@ export default function Home() {
         <div className="resume-preview-section">
           <h3 className="resume-preview-title">Resume</h3>
           <div className="resume-preview-container">
-            <a 
-              href={getAssetPath("/resumes/resume.pdf")} 
-              target="_blank" 
+            <a
+              href={getAssetPath(personalInfo.resume.pdf)}
+              target="_blank"
               rel="noopener noreferrer"
               className="resume-preview-link resume-preview-desktop"
               aria-label="View full resume PDF in new tab"
             >
               <div className="resume-preview-image-container">
-                <img 
-                  src={getAssetPath("/resume_page-0001.jpg")} 
-                  alt="Resume preview - Click to view full PDF" 
+                <img
+                  src={getAssetPath(personalInfo.resume.preview)}
+                  alt="Resume preview - Click to view full PDF"
                   className="resume-preview-image"
                   loading="lazy"
                 />
@@ -119,8 +119,8 @@ export default function Home() {
             </a>
             <div className="resume-preview-mobile">
               <h4 className="resume-mobile-title">Resume</h4>
-              <a 
-                href={getAssetPath("/resumes/resume.pdf")}
+              <a
+                href={getAssetPath(personalInfo.resume.pdf)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button"
@@ -139,4 +139,4 @@ export default function Home() {
       </div>
     </section>
   )
-} 
+}

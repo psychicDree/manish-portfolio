@@ -1,8 +1,8 @@
 {
   "personal": {
     "name": "Manish Jha",
-    "title": "Game Developer",
-    "description": "Game Developer with 6 years of experience driving impact projects to successful completion while consistently meeting quality targets. I'm a game enthusiast who loves reading up on the latest trends and implementing them in my job. With previous experience in startups, I bring development management skills, excelling in crafting detailed project plans, managing development KPIs, and fostering effective communication among team members.",
+    "title": "Technical Head · Game Developer",
+    "description": "Technical Head at Nexenova Studios, building studio infrastructure and leading cross-functional teams from game ideation through production. I bridge design and engineering by implementing Figma designs in Unity, and work across gameplay, rendering, VFX, backend, multiplayer, and AI-assisted development workflows.",
     "location": "New Delhi",
     "email": "devmanjha@gmail.com",
     "phone": "+91-9599205371",
@@ -54,17 +54,29 @@
   },
   "skills": {
     "primary": [
-      "Unity Engine",
-      "C# Programming",
-      "Game Development",
-      "Socket Programming",
-      "Project Management"
+      "Unity Technical Art",
+      "C# & Shader Programming",
+      "Figma-to-Unity UI",
+      "Rendering & VFX",
+      "AI & Backend Engineering"
     ],
     "technologies": [
       "Unity",
       "C#",
       "C++",
-      "OpenAI",
+      "HLSL",
+      "Shader Graph",
+      "URP",
+      "UI Toolkit",
+      "USS",
+      "Figma",
+      "Python",
+      "LangChain",
+      "Sentence Transformers",
+      "FAISS",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
       "Blender",
       "Unreal Engine",
       "Blueprint",
@@ -219,12 +231,36 @@
           "Unity 6",
           "C#",
           "URP",
+          "Shader Graph",
+          "HLSL",
+          "Visual Effects",
+          "Particle Systems",
+          "UI Toolkit",
+          "USS",
+          "Figma",
           "Addressables",
           "Input System",
           "ScriptableObject pipelines",
           "Editor tooling"
         ],
-        "applied": "Build pipelines and iteration tooling at Passion Gaming. ScriptableObject-driven level and balance data across all three Nexenova titles. 20% app response time and 25% load-time improvements from profiling work."
+        "applied": "Implemented Figma designs as Unity UI across almost all game projects. Built development pipelines and profiling tools at Passion Gaming, and worked with Unity Visual Effects, Particle Systems, Shader Graph, UI Toolkit and asset optimization."
+      },
+      {
+        "id": "ai-engineering",
+        "title": "AI engineering & retrieval",
+        "icon": "uil uil-robot",
+        "tech": [
+          "Python",
+          "RAG",
+          "Semantic search",
+          "Embeddings",
+          "Knowledge bases",
+          "LangChain",
+          "Sentence Transformers",
+          "FAISS",
+          "Offline coding agents"
+        ],
+        "applied": "Built an offline AI-assisted coding workflow around a locally indexed Unity Scripting API knowledge base, using contextual retrieval to find documentation for coding questions."
       },
       {
         "id": "multiplayer",
@@ -233,11 +269,13 @@
         "tech": [
           "Photon",
           "Socket.IO",
-          "Socket architecture",
+          "Node.js",
+          "Express.js",
           "REST APIs",
+          "Socket architecture",
           "State synchronisation"
         ],
-        "applied": "Locomotion sync for players, bots and creatures on Warlands. Turn state, auto-moves and turn indicators across Ludo, Court Piece and Chess. Socket and API architecture for a live real-money card platform."
+        "applied": "Built multiplayer synchronization across shipped games and socket/API architecture for a live card platform. Also worked on game-server, e-commerce and multi-game portal backend systems."
       },
       {
         "id": "liveops",
@@ -269,7 +307,7 @@
           "iOS",
           "WebGL"
         ],
-        "applied": "Underground Waifus launched on Steam, Epic and Android off one codebase. Five titles published to Google Play."
+        "applied": "Underground Waifus launched on Steam, Epic and Android off one codebase. Six released hypercasual games at Nexenova Studios."
       },
       {
         "id": "graphics",
@@ -347,7 +385,7 @@
     ]
   },
   "about": {
-    "summary": "Senior Software Engineer with 6 years of experience driving impact projects to successful completion while consistently meeting quality targets. I'm a game enthusiast who loves reading up on the latest trends and implementing them in my job. With previous experience in startups, I bring development management skills, excelling in crafting detailed project plans, managing development KPIs, and fostering effective communication among team members.",
+    "summary": "Technical Head at Nexenova Studios, building studio infrastructure and leading cross-functional teams across game design, development, and production.",
     "interests": [
       "Game Development",
       "Unity Engine",
@@ -386,14 +424,19 @@
     "experience": [
       {
         "company": "Nexenova Studios",
+        "website": "https://nexenovastudios.com/",
         "project": "",
         "role": "Technical Head",
-        "period": "2025 - Present",
-        "location": "New Delhi, India",
+        "period": "December 2025 - Present",
+        "location": "Noida, India",
         "highlights": [
-          "Shipped three titles to Google Play: Park Escape, Last Turn and Endless Merge 2048.",
-          "Built on Unity 6 with the full Unity Gaming Services stack, so progression and currency are server-owned rather than trusted to the device.",
-          "Sets the technical direction across the portfolio: Unity 6 and URP, the UGS service layer, and the ad and IAP mediation stack."
+          "Establish the studio's development infrastructure and workflows; manage cross-functional teams across the full game development lifecycle, alongside technical leadership.",
+          "Lead projects from game ideation and gameplay planning through prototyping, validation, and production, coordinating delivery across casual, action, strategy, and multiplayer genres.",
+          "Evaluate game ideas and playable prototypes for player enjoyment, gameplay quality, technical feasibility, and market potential to inform development priorities.",
+          "Define and document game mechanics and game design specifications; translate GDDs into implementation plans, sprint milestones, and coordinated team deliverables.",
+          "Plan game economies and build economy spreadsheets for projects in development, including Rubble Rivals and Relic Rivals.",
+          "Lead and mentor Unity development and game design teams, establishing engineering standards, architectural guidelines, and review workflows.",
+          "Architect scalable gameplay, backend integration, multiplayer communication, and progression systems; optimize runtime performance, memory usage, assets, and builds."
         ]
       },
       {
