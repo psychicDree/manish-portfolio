@@ -86,7 +86,7 @@ domain requires changing all of them. Any new static asset reference must go thr
 ### Content lives in two places
 
 - `src/data/personalInfo.json` — top-level keys `personal, social, messaging, resume,
-  skills, references, about`. Consumed by `Home`, `Footer`, `Skills`, `About`. Nothing in
+  skills, about`. Consumed by `Home`, `Footer`, `Skills`, `About`. Nothing in
   those components is hardcoded any more: `about.experience[]` and `about.education[]` are
   arrays the timelines map over, and `skills.matrix[]` drives the whole Skills section.
   Each `skills.matrix` entry is `{ id, title, icon, tech[], applied }` — `applied` names
